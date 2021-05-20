@@ -1,0 +1,480 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+	font-family: AcademyFilled;  
+	src: url(/AcademyFilled3D.ttf);  
+	font-weight: normal;  
+}
+
+
+/* Style */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: .7rem 0;
+}
+
+.btn-read-more{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(150, 5, 5);
+    border: none;
+    border-radius: .5rem;
+    height: 3rem;
+    margin: 0rem 0;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    box-shadow:  1px 1px 2px 1px rgba(0, 0, 0, 0.25), -1px -1px 2px 1px rgba(0, 0, 0, 0.25);
+
+}
+
+.read-more {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.underlined {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+/* Sticky */
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
+
+
+.sticky-box {
+    position: fixed;
+    top: 0;
+    z-index: 6;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Heading */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: url('/img/img-slider-3.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.header-info {
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+
+.crest {
+     max-width: initial;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     height: 20%;
+     width: 100%;
+}
+
+.fencer {
+    height: 4.5rem;
+}
+
+
+.fencer {
+    padding: 0 1.1rem;
+    transition: transform 1s;
+}
+
+.headline {
+    color: #fff;
+    font-family: AcademyFilled;
+    -webkit-text-stroke: .06rem black;
+    text-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.25);
+    font-size: 5rem;
+}
+
+.crest {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar */
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: .2rem 0; */
+    background: rgba(200, 200, 200, 0.3);
+    width: 100%;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25);
+    height: 3.5rem;
+}
+
+nav ul { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-width: 63.4rem;
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    
+    /* max-width: 13.5rem;
+    min-width: 10.5rem; */
+    height: 100%;
+    
+    padding: 10px 0;
+    
+    
+}
+
+nav li a {
+    color: rgb(150, 5, 5);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    height: 100%;
+    width: 15%;
+    /* margin: 0 1rem; */
+    border-right: 1px solid rgb(0, 0, 0);
+    
+
+    
+}
+
+.btn-active a {
+    color: rgb(255, 255, 255);
+
+}
+
+.btn-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem .6rem;
+    width: 100%;
+    /* margin: .07rem; */
+    /* background-color: rgb(0, 0, 0, .4); */
+    /* border-right: 1px solid rgb(150, 5, 5); */
+    /* border-radius: .3rem; */ 
+}
+
+
+
+li:hover,
+li:hover a,
+.btn-active  {
+    background:rgb(150, 5, 5);
+    color: rgb(255, 255, 255); 
+}
+
+.btn-click:focus {
+    transform: scale(.95);
+}
+
+.icon {
+    padding-top: .3rem;
+    display: inline-block;
+    margin-right: .5rem;
+    width: 2rem;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    z-index: 10;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    /* right: 0; */
+    /* left: .5rem; */
+    display: none;
+    top: 100%;
+    width: 100%;
+    /* background: rgb(150, 5, 5, .9); */
+    background: rgb(255, 255, 255, .9);
+    border: 0.07rem solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    /* box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.3); */
+    /* border-radius: .4rem .4rem .4rem .4rem; */
+    /* border-top: .1rem rgba(0, 0, 0, 1); */
+}
+
+.dropdown:hover .btn-nav {
+    background: rgb(150, 5, 5);
+    color: rgb(255, 255, 255);
+}
+
+.drop-item {
+    color: rgb(150, 5, 5);
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: .4rem 1rem;
+    margin-top: .2rem;
+    /* border-radius: .3rem; */
+    padding-top: 1rem;
+    /* border-bottom:  1px solid rgb(255, 255, 255); */
+    border: none;
+}
+
+.dropdown-menu a:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width:  100%; /* Change this to whatever width you want. */
+    padding-top: .3rem; /* This creates some space between the element and the border. */
+    padding-bottom: .3rem; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid rgb(150, 5, 5); /* This creates the border. Replace black with whatever color you want. */
+
+
+}
+
+.dropdown-menu a.last-item:after{
+    content: "";
+    border: none;
+    margin-bottom: 0;
+}
+
+.pointer {
+    width: 1.25rem;
+    position: absolute;
+    right: 2.5rem;
+    transition: transform .2s;
+
+}
+
+
+.dropdown:hover 
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover 
+.pointer {
+    transform: rotate(90deg);
+}
+
+.drop-item:hover {
+    /* background-color: rgb(255, 255, 255);
+    color: rgb(216, 2, 2); */
+    background-color: rgb(150, 5, 5);
+    color: rgb(255, 255, 255);
+}
+
+.drop-item-active {
+    background-color: rgb(150, 5, 5);
+    color: rgb(255, 255, 255);  
+}
+
+/* Container */
+.container {
+    max-width: 100%;
+    display: flex;
+    max-height: 100%;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* .img-box {
+    width: 15%;
+    height: 100vh;
+    position: sticky;
+    
+}
+
+.img-box > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+
+/* .img-box.sticky {
+    position: fixed;
+    width: 15vw;
+    
+} */
+
+
+
+
+/* Content */
+.content {
+    width: 70%;
+    box-shadow: 4px 0 4px 1px rgba(0, 0, 0, 0.4), -4px 0 4px 1px rgba(0, 0, 0, 0.4);
+    z-index: 8;
+    background-color: rgba(220, 220, 220, 0.25);
+}
+
+#content-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Slider */
+
+
+
+/* Showcase content */
+
+
+
+.results-latest,
+.history-intro {
+    width: 90%;
+    height: 80%;
+    box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.4), -2px 0px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.contact-intro {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.4), -2px 0px 2px 0px rgba(0, 0, 0, 0.4);
+    
+}
+
+.results-latest p,
+.history-intro p,
+.contact-intro p {
+    color: rgb(0, 0, 0);
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50vh;
+    
+}
+
+
+.contact-intro-content {
+    padding: 1rem 2rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-intro img {
+    width: 49%;
+    /* padding: .5rem .5rem; */
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    /* z-index: 7;
+    box-shadow: 0 -4px 2px 1px rgba(0, 0, 0, 0.5); */
+    
+}
+
+footer section.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    background: #C00C0C;
+    height: 100%;
+    width: 100%;
+}
+
+footer div.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0rem;
+    padding-top: .3rem;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+footer div.social a img {
+    margin: 0 .5rem;
+}
+
+
+footer div.terms {
+    display: flex;
+    justify-content: center;
+    background: rgb(100, 100, 100);
+    border-top: 1px solid rgba(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: .7rem;
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
