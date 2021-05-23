@@ -1,5 +1,6 @@
 'use strict';
 
+<<<<<<< HEAD:script.js
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
@@ -21,11 +22,14 @@ const swiper = new Swiper('.swiper-container', {
       el: '.swiper-scrollbar',
     },
   });
+=======
+
+>>>>>>> 2552cc8 (MKCZ v3):JS/script.js
   
 
 const imgBox = document.querySelectorAll('.img-box');
 const navbar = document.querySelector('.navbar');
-const navHeight = navbar.getBoundingClientRect().height;
+// const navHeight = navbar.getBoundingClientRect().height;
 const header = document.querySelector('.header');
 const fencer = document.querySelectorAll('.fencer');
 

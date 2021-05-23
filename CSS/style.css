@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "./node_modules/swiper/swiper-bundle.css";
 
+
+
 @font-face {
 	font-family: AcademyFilled;  
 	src: url(/AcademyFilled3D.ttf);  
@@ -93,7 +95,28 @@ p {
     position:absolute;
     z-index: -1;
 
+<<<<<<< HEAD:style.css
+=======
 }
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+>>>>>>> 2552cc8 (MKCZ v3):CSS/style.css
+}
+/* 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
 
 .swiper-container {
     width: 100%;
