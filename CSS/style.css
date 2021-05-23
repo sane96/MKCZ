@@ -95,14 +95,11 @@ p {
     position:absolute;
     z-index: -1;
 
-<<<<<<< HEAD:style.css
-=======
 }
 
 .swiper-container {
     width: 100%;
     height: 100vh;
->>>>>>> 2552cc8 (MKCZ v3):CSS/style.css
 }
 /* 
 .swiper-slide {
@@ -142,6 +139,9 @@ p {
     display: flex;
 }
 
+.crest {
+    
+    display: flex;
     align-items: center;
      max-width: initial;
      display: flex;
@@ -162,7 +162,6 @@ p {
 
 .padder {
     height: 63vh;
-    z-index: -2;
 }
 
 

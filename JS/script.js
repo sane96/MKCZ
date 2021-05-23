@@ -1,30 +1,5 @@
 'use strict';
 
-<<<<<<< HEAD:script.js
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
-=======
-
->>>>>>> 2552cc8 (MKCZ v3):JS/script.js
   
 
 const imgBox = document.querySelectorAll('.img-box');
