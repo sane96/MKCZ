@@ -1,0 +1,28 @@
+{
+  "name": "mkcz",
+  "version": "1.0.1",
+  "description": "Fencing club",
+  "type": "module",
+  "dependencies": {
+    "swiper": "^6.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sane96/MKCZ.git"
+  },
+  "author": "Danilo Santrač",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sane96/MKCZ/issues"
+  },
+  "homepage": "https://github.com/sane96/MKCZ#readme"
+}

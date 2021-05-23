@@ -1,5 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./node_modules/swiper/swiper-bundle.css";
 
 @font-face {
 	font-family: AcademyFilled;  
@@ -89,32 +90,45 @@ p {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    position:absolute;
+    z-index: -1;
+
 }
 
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+}
+/* 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
 .header-info {
-    height: 10%;
+    height: 10vh;
     width: 100%;
     display: flex;
 }
 
 .crest {
+    display: flex;
+    align-items: center;
      max-width: initial;
      display: flex;
      flex-direction: row;
      justify-content: center;
      align-items: center;
-     height: 20%;
+     height: 20vh;
      width: 100%;
-}
-
-.fencer {
-    height: 4.5rem;
-}
-
-
-.fencer {
-    padding: 0 1.1rem;
-    transition: transform 1s;
 }
 
 .headline {
@@ -125,10 +139,10 @@ p {
     font-size: 5rem;
 }
 
-.crest {
-    display: flex;
-    align-items: center;
+.padder {
+    height: 63vh;
 }
+
 
 /* Navbar */
 
@@ -138,11 +152,13 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* padding: .2rem 0; */
-    background: rgba(200, 200, 200, 0.3);
+    background: rgba(200, 200, 200, 0.6);
     width: 100%;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25);
-    height: 3.5rem;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+    height: 7vh;
+    z-index: 15;
+    position: sticky;
+    top: 0;
 }
 
 nav ul { 
@@ -154,41 +170,28 @@ nav ul {
     width: 100%;
     min-width: 63.4rem;
     list-style: none;
-    padding-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
 }
 
 nav ul li {
     display: flex;
     align-items: center;
-    
-    /* max-width: 13.5rem;
-    min-width: 10.5rem; */
     height: 100%;
-    
-    padding: 10px 0;
-    
-    
+    width: 13%;
+    margin-left: -1px;
+     
 }
 
 nav li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgb(150, 5, 5);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
     height: 100%;
-    width: 15%;
-    /* margin: 0 1rem; */
-    border-right: 1px solid rgb(0, 0, 0);
-    
-
-    
-}
-
-.btn-active a {
-    color: rgb(255, 255, 255);
-
+    width: 100%;
+    padding: 10px 0;   
 }
 
 .btn-nav {
@@ -196,25 +199,26 @@ nav li a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: .3rem .6rem;
-    width: 100%;
-    /* margin: .07rem; */
-    /* background-color: rgb(0, 0, 0, .4); */
-    /* border-right: 1px solid rgb(150, 5, 5); */
-    /* border-radius: .3rem; */ 
+    padding: .3rem 0;
+    padding-right: 1rem;
+    width: 100%; 
+    border-right: 1px solid rgb(150, 5, 5);
+
+    height: 100%;
 }
 
-
+nav ul li:last-of-type a p.btn-nav {
+    border-right: none;
+}
 
 li:hover,
-li:hover a,
-.btn-active  {
+li:hover a p.btn-nav {
     background:rgb(150, 5, 5);
     color: rgb(255, 255, 255); 
 }
 
-.btn-click:focus {
-    transform: scale(.95);
+.btn-active {
+    border-bottom: 4px solid rgb(150, 5, 5); 
 }
 
 .icon {
@@ -230,21 +234,26 @@ li:hover a,
     z-index: 10;
 }
 
+.pointer {
+    width: 1.25rem;
+    position: absolute;
+    right: 2.5rem;
+    transition: transform .2s;
+}
+
+.dropdown:hover 
+.pointer {
+    transform: rotate(90deg);
+}
 
 .dropdown-menu {
     position: absolute;
-    /* right: 0; */
-    /* left: .5rem; */
     display: none;
     top: 100%;
     width: 100%;
-    /* background: rgb(150, 5, 5, .9); */
     background: rgb(255, 255, 255, .9);
-    border: 0.07rem solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
-    /* box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.3); */
-    /* border-radius: .4rem .4rem .4rem .4rem; */
-    /* border-top: .1rem rgba(0, 0, 0, 1); */
+    padding-top: .2rem;
 }
 
 .dropdown:hover .btn-nav {
@@ -253,43 +262,32 @@ li:hover a,
 }
 
 .drop-item {
+    width: 100%;
+    height: 7vh;
+    padding: 0 0;
+    margin-top: -1px;
+}
+
+.drop-item-active {
+    border-left: 3px solid rgb(150, 5, 5);
+}
+
+.drop-item-p {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: rgb(150, 5, 5);
     font-weight: 500;
-    font-size: 1.2rem;
-    padding: .4rem 1rem;
-    margin-top: .2rem;
-    /* border-radius: .3rem; */
-    padding-top: 1rem;
-    /* border-bottom:  1px solid rgb(255, 255, 255); */
+    font-size: 1.1rem;
+    border-bottom:  1px solid rgb(150, 5, 5);
+}
+
+.drop-item:last-of-type p {
     border: none;
 }
-
-.dropdown-menu a:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width:  100%; /* Change this to whatever width you want. */
-    padding-top: .3rem; /* This creates some space between the element and the border. */
-    padding-bottom: .3rem; /* This creates some space between the element and the border. */
-    border-bottom: 1px solid rgb(150, 5, 5); /* This creates the border. Replace black with whatever color you want. */
-
-
-}
-
-.dropdown-menu a.last-item:after{
-    content: "";
-    border: none;
-    margin-bottom: 0;
-}
-
-.pointer {
-    width: 1.25rem;
-    position: absolute;
-    right: 2.5rem;
-    transition: transform .2s;
-
-}
-
 
 .dropdown:hover 
 .dropdown-menu {
@@ -297,22 +295,15 @@ li:hover a,
     flex-direction: column;
 }
 
-.dropdown:hover 
-.pointer {
-    transform: rotate(90deg);
-}
 
 .drop-item:hover {
-    /* background-color: rgb(255, 255, 255);
-    color: rgb(216, 2, 2); */
     background-color: rgb(150, 5, 5);
+}
+
+.drop-item:hover .drop-item-p {
     color: rgb(255, 255, 255);
 }
 
-.drop-item-active {
-    background-color: rgb(150, 5, 5);
-    color: rgb(255, 255, 255);  
-}
 
 /* Container */
 .container {
@@ -323,27 +314,6 @@ li:hover a,
     flex-direction: row;
     justify-content: center;
 }
-
-/* .img-box {
-    width: 15%;
-    height: 100vh;
-    position: sticky;
-    
-}
-
-.img-box > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
-
-/* .img-box.sticky {
-    position: fixed;
-    width: 15vw;
-    
-} */
-
 
 
 
@@ -361,8 +331,6 @@ li:hover a,
     align-items: center;
 }
 
-/* Slider */
-
 
 
 /* Showcase content */
@@ -377,7 +345,7 @@ li:hover a,
 }
 
 .contact-intro {
-    width: 80%;
+    width: 30%;
     height: 80%;
     display: flex;
     flex-direction: row;

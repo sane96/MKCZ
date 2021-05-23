@@ -13,43 +13,65 @@
     <meta name="theme-color" content="#ffffff">
     <title>MK Crvena zvezda | Naslovna</title>
     <link rel="stylesheet" href="./style.css">
-    <script defer src="./script.js"></script>
+    <script type="module" src="/node_modules/swiper/swiper-bundle.js"></script>
+    
+    <script type="module" src="./script.js"></script>
+
+    
 </head>
 <body>
-    <header class="header">
-       
-        <div class = "header-info">
+   
+       <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <header class="header">     
+    </header>  
+    <div class = "header-info">
             
-        </div>    
-            <!-- <img class = "crest" src="/img/naslov.png" alt=""> -->
-        <div class="crest">
-                <h1 class="headline">CRVENA</h1>
-                <a href="index.html"><img class="crest" src="/img/grb.png" alt=""></a>
-                <h1 class="headline">ZVEZDA</h1>
-        </div>           
-            
+    </div>    
+        <!-- <img class = "crest" src="/img/naslov.png" alt=""> -->
+    <div class="crest">
+            <h1 class="headline">CRVENA</h1>
+            <a href="index.html"><img class="crest" src="/img/grb.png" alt=""></a>
+            <h1 class="headline">ZVEZDA</h1>
+    </div>     
         
+    
         <nav class="navbar">
             
             <!-- <img class = "fencer" src="/img/LevoMacevalac current 1.png" alt=""> -->
             <ul class="nav-btns">
-                <li class="btn-active"><a  href="index.html" class = "btn-nav btn-click"><img src="/img/home.svg" alt="" class="icon"> Naslovna</a></li>
-                <li><a href="news.html" class = "btn-nav btn-click"><img src="/img/news.svg" alt="" class="icon"> Vesti</a></li>
-                <li><a href="results.html" class = "btn-nav btn-click"><img src="/img/results.svg" alt="" class="icon"> Rezultati</a></li>
-                <li><a href="gallery.html" class = "btn-nav btn-click"><img src="/img/gallery.svg" alt="" class="icon"> Galerija</a></li>
+                <li><a class="btn-active" href="index.html"><p class ="btn-nav"><img src="/img/home.svg" alt="" class="icon"> Naslovna</p></a></li>
+                <li><a href="news.html" ><p class ="btn-nav"><img src="/img/news.svg" alt="" class="icon"> Vesti</p></a></li>
+                <li><a href="results.html"><p class ="btn-nav"><img src="/img/results.svg" alt="" class="icon"> Rezultati</p></a></li>
+                <li><a href="gallery.html"><p class ="btn-nav"><img src="/img/gallery.svg" alt="" class="icon"> Galerija</p></a></li>
                 <li class="dropdown">
-                    <a href="#" class = "btn-nav"><img src="/img/club.svg" alt="" class="icon"> Klub<img class="pointer" src="/img/pointer.svg" alt=""></a>
+                    <a href="#"><p class ="btn-nav"><img src="/img/club.svg" alt="" class="icon"> Klub<img class="pointer" src="/img/pointer.svg" alt=""></p></a>
                     <div class="dropdown-menu">
-                        <a class="drop-item" href="administration.html">Uprava</a>
-                        <a class="drop-item" href="coaches.html">Treneri</a>
-                        <a class="drop-item" href="documents.html">Dokumenta</a>
-                        <a class="drop-item last-item" href="history.html">Istorijat</a>
-                    </div></li>
-                <li><a href="contact.html" class = "btn-nav btn-click"><img src="/img/contact.svg" alt="" class="icon"> Kontakt</a></li>
+                        <a class="drop-item" href="administration.html"><p class="drop-item-p">Uprava</p></a>
+                        <a class="drop-item" href="coaches.html"><p class="drop-item-p">Treneri</p></a>
+                        <a class="drop-item" href="documents.html"><p class="drop-item-p">Dokumenta</p></a>
+                        <a class="drop-item" href="history.html"><p class="drop-item-p">Istorijat</p></a>
+                    </div>
+                </li>
+                <li><a href="contact.html"><p class ="btn-nav"><img src="/img/contact.svg" alt="" class="icon"> Kontakt</p></a></li>
             </ul>
             <!-- <img class = "fencer" src="/img/DesnoMacevalac current 1.png" alt=""> -->
         </nav>
-    </header>
+        <div class="padder">
+
+        </div>
+   
 
     <div class="container">
         
@@ -70,20 +92,8 @@
                 </section>
                 
             </div>
+
             <div class="section section-2">
-                <section class="contact-intro">
-
-                    <div class="contact-intro-content">
-                        <p class="card-tittle">kontakt</p>
-                        <div class="read-more">
-                            <a class="btn-read-more" href="history.html">&rang; Procitaj vise</a>
-                        </div>
-                    </div> 
-                    <img src="/img/stadion.jpg" alt="">
-                </section>
-            </div>
-
-            <div class="section section-3">
                 <section class="history-intro">
                     <p class="card-tittle">Istorijat uvod..</p>
                     <div class="read-more">
@@ -104,6 +114,16 @@
 <footer class="footer">
     <section class="footer-content">
         <img src="/img/grb.png" alt="">
+        <section class="contact-intro">
+
+            <div class="contact-intro-content">
+                <p class="card-tittle">kontakt</p>
+                <div class="read-more">
+                    <a class="btn-read-more" href="history.html">&rang; Procitaj vise</a>
+                </div>
+            </div> 
+            <img src="/img/stadion.jpg" alt="">
+        </section>
         <div class="social">
                 <p>Pratite nas na</p>
             <div class="social-icons">
@@ -118,5 +138,6 @@
         <ion-icon name="stats-chart-outline"></ion-icon>
     
 </footer>
+
 </body>
 </html>
