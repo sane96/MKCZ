@@ -162,6 +162,7 @@ p {
 
 .padder {
     height: 63vh;
+    z-index: -2;
 }
 
 
