@@ -1,0 +1,99 @@
+.content-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 900px;
+}
+
+.results-table {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.results-column-type {
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    align-items: center;
+}
+
+.column-type {
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    background: rgb(155, 5, 5);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.column-type > p {
+    display: flex;
+    justify-content: center;   
+    width: 100%;
+}
+
+.column-name {
+    width: 30%;
+}
+
+.column-place {
+    width: 20%;
+}
+
+.column-date {
+    width: 15%;
+}
+
+.column-weapon {
+    width: 10%;
+}
+
+.column-sex {
+    width: 10%;
+}
+
+.column-age {
+    width: 15%;
+}
+
+.results-container {
+    width: 100%;
+}
+
+.result-single {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: #f4f4f4;
+
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    border-right: 1px solid rgb(155, 5, 5);
+    color: rgb(155, 5, 5);
+    font-weight: 500;
+}
+
+.column:last-of-type {
+    border: none;
+}
+
+.result-single:nth-of-type(2n) {
+    background: rgb(155, 5, 5, .6);
+}
+
+.result-single:nth-of-type(2n) .column {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}

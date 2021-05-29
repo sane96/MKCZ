@@ -1,22 +1,22 @@
 
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
 
+const swiper = new Swiper('.swiper-container', {
+
+    speed: 700,
     loop: true,
   
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+
+    autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+    }
+
+
   });
+
+  const swiperDOM = document.querySelector('.swiper-container');
