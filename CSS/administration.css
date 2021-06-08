@@ -1,0 +1,20 @@
+.content-administration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.administration-president {
+    width: 90%;
+    height: 20rem;  
+    display: flex;
+    align-items: center;
+}
+
+.administration-container-img {
+    width: 30%;
+    height: 90%;
+    display: inline-block;
+}
+

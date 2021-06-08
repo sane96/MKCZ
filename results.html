@@ -12,25 +12,33 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>MK Crvena zvezda | Rezultati </title>
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/results.css">
-    <script defer src="./JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/results.css">
+    <script defer src="JS/results.js"></script>
     
 
     
 </head>
 <body>
    
-        <div class = "header-info background-grey">
-            <p>Prati nas na</p>
-            <svg class="icon-social" viewBox="0 0 60.734 60.733" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+    <div class = "header-info background-grey">
+        <div class="crest">
+            <h1 class="headline headline-header-info headline-red">CRVENA</h1>               
+            <h1 class="headline headline-header-info headline-white">ZVEZDA</h1>
+        </div>
+        <p>Prati nas na</p>
+
+        <a class="icon-social" href="#">
+            <svg  viewBox="0 0 60.734 60.733" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
                 <use xlink:href="#facebook"></use>
             </svg>
-        
-            <svg class="icon-social" viewBox="0 0 455.73 455.73" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+        </a>
+        <a class="icon-social" href="#">
+            <svg  viewBox="0 0 455.73 455.73" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
                 <use xlink:href="#instagram"></use>
             </svg>
-        </div>     
+        </a>       
+    </div>      
 
         <nav>
             <ul class="nav-btns">
@@ -59,15 +67,6 @@
                             <svg class="icon-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
                                 <use xlink:href="#results"></use>
                             </svg>Rezultati
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="gallery.html">
-                        <p class ="btn-nav">
-                            <svg class="icon-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                <use xlink:href="#gallery"></use>
-                            </svg>Galerija
                         </p>
                     </a>
                 </li>
@@ -105,7 +104,7 @@
         <div class="container">
             <section class="content content-results">
                
-                <div class="results-table">
+                <div class="results-container">
                    
                     <div class="results-column-type">
                         <div class="column-type column-name">
@@ -120,7 +119,7 @@
                         <div class="column-type column-weapon">
                             <p>Oruzije</p>
                         </div>
-                        <div class="column-type column-sex">
+                        <div class="column-type column-gender">
                             <p>Pol</p>
                         </div>
                         <div class="column-type column-age">
@@ -131,13 +130,13 @@
                         </div>
                     </div>
 
-                    <div class="results-container">
+                    <div class="results-table">
 
                         <div class="results-single">
                             <div class="results-outline">
                                 <div class="column column-name">
                                     <div class="column-pointer">                         
-                                        <svg class="pointer-column" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                        <svg class="pointer-results" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
                                             <use xlink:href="#pointer"></use>
                                         </svg>
                                     </div>  
@@ -152,15 +151,14 @@
                                 <div class="column column-weapon">
                                     <p>3</p>
                                 </div>
-                                <div class="column column-sex">
+                                <div class="column column-gender">
                                     <p>Pol</p>
                                 </div>
                                 <div class="column column-age">
                                     <p>Seniori</p>
                                 </div>
                                 <div class="column column-document">
-                                    <p>Pozivno pismo</p>
-                                    <p>Rezultati</p>
+                                    <a href="#"><p>Pozivno pismo</p></a>
                                 </div>
                             </div>
 
@@ -178,14 +176,13 @@
                                     <div class="column-drop column-weapon">
                                         <p>3</p>
                                     </div>
-                                    <div class="column-drop column-sex">
+                                    <div class="column-drop column-gender">
                                         <p>Pol</p>
                                     </div>
                                     <div class="column-drop column-age">
                                         <p>Seniori</p>
                                     </div>
                                     <div class="column-drop column-document">
-                                            <a href="#"><p>Pozivno pismo</p></a>
                                             <a href="#"><p>Rezultati</p></a>
                                     </div> 
                                 </div> 
@@ -202,14 +199,13 @@
                                     <div class="column-drop column-weapon">
                                         <p>3</p>
                                     </div>
-                                    <div class="column-drop column-sex">
+                                    <div class="column-drop column-gender">
                                         <p>Pol</p>
                                     </div>
                                     <div class="column-drop column-age">
                                         <p>Seniori</p>
                                     </div>
-                                    <div class="column-drop column-document">
-                                            <a href="#"><p>Pozivno pismo</p></a>
+                                    <div class="column-drop column-document">                                           
                                             <a href="#"><p>Rezultati</p></a>
                                     </div> 
                                 </div> 
@@ -217,11 +213,12 @@
 
                         </div>
 
+                        
                         <div class="results-single">
                             <div class="results-outline">
                                 <div class="column column-name">
-                                    <div class="column-btn">                         
-                                        <svg class="pointer-column" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                    <div class="column-pointer">                         
+                                        <svg class="pointer-results" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
                                             <use xlink:href="#pointer"></use>
                                         </svg>
                                     </div>  
@@ -236,20 +233,19 @@
                                 <div class="column column-weapon">
                                     <p>3</p>
                                 </div>
-                                <div class="column column-sex">
+                                <div class="column column-gender">
                                     <p>Pol</p>
                                 </div>
                                 <div class="column column-age">
                                     <p>Seniori</p>
                                 </div>
                                 <div class="column column-document">
-                                    <p>Pozivno pismo</p>
-                                    <p>Rezultati</p>
+                                    <a href="#"><p>Pozivno pismo</p></a>
                                 </div>
                             </div>
 
-                            <!-- <div class="dropdown-results">
-                                <div class="dropdown-results-single">
+                            <div class="results-dropdown">
+                                <div class="results-dropdown-single">
                                     <div class="column-drop column-name">                               
                                         <p>Drzavno Prvenstvo</p>
                                     </div>
@@ -262,18 +258,17 @@
                                     <div class="column-drop column-weapon">
                                         <p>3</p>
                                     </div>
-                                    <div class="column-drop column-sex">
+                                    <div class="column-drop column-gender">
                                         <p>Pol</p>
                                     </div>
                                     <div class="column-drop column-age">
                                         <p>Seniori</p>
                                     </div>
                                     <div class="column-drop column-document">
-                                            <a href="#"><p>Pozivno pismo</p></a>
                                             <a href="#"><p>Rezultati</p></a>
                                     </div> 
                                 </div> 
-                                <div class="dropdown-results-single">
+                                <div class="results-dropdown-single">
                                     <div class="column-drop column-name">                               
                                         <p>Drzavno Prvenstvo</p>
                                     </div>
@@ -286,20 +281,101 @@
                                     <div class="column-drop column-weapon">
                                         <p>3</p>
                                     </div>
-                                    <div class="column-drop column-sex">
+                                    <div class="column-drop column-gender">
                                         <p>Pol</p>
                                     </div>
                                     <div class="column-drop column-age">
                                         <p>Seniori</p>
                                     </div>
                                     <div class="column-drop column-document">
-                                            <a href="#"><p>Pozivno pismo</p></a>
                                             <a href="#"><p>Rezultati</p></a>
                                     </div> 
                                 </div> 
-                            </div> -->
+                            </div>
 
                         </div>
+
+                        <div class="results-single">
+                            <div class="results-outline">
+                                <div class="column column-name">
+                                    <div class="column-pointer">                         
+                                        <svg class="pointer-results" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                            <use xlink:href="#pointer"></use>
+                                        </svg>
+                                    </div>  
+                                    <p>Drzavno Prvenstvo</p>
+                                </div>
+                                <div class="column column-place">
+                                    <p>Beograd</p>
+                                </div>
+                                <div class="column column-date">
+                                    <p>13.6.2021.</p>
+                                </div>
+                                <div class="column column-weapon">
+                                    <p>3</p>
+                                </div>
+                                <div class="column column-gender">
+                                    <p>Pol</p>
+                                </div>
+                                <div class="column column-age">
+                                    <p>Seniori</p>
+                                </div>
+                                <div class="column column-document">
+                                    <a href="#"><p>Pozivno pismo</p></a>
+                                </div>
+                            </div>
+
+                            <div class="results-dropdown">
+                                <div class="results-dropdown-single">
+                                    <div class="column-drop column-name">                               
+                                        <p>Drzavno Prvenstvo</p>
+                                    </div>
+                                    <div class="column-drop column-place">
+                                        <p>Beograd</p>
+                                    </div>
+                                    <div class="column-drop column-date">
+                                        <p>13.6.2021.</p>
+                                    </div>
+                                    <div class="column-drop column-weapon">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="column-drop column-gender">
+                                        <p>Pol</p>
+                                    </div>
+                                    <div class="column-drop column-age">
+                                        <p>Seniori</p>
+                                    </div>
+                                    <div class="column-drop column-document">
+                                            <a href="#"><p>Rezultati</p></a>
+                                    </div> 
+                                </div> 
+                                <div class="results-dropdown-single">
+                                    <div class="column-drop column-name">                               
+                                        <p>Drzavno Prvenstvo</p>
+                                    </div>
+                                    <div class="column-drop column-place">
+                                        <p>Beograd</p>
+                                    </div>
+                                    <div class="column-drop column-date">
+                                        <p>13.6.2021.</p>
+                                    </div>
+                                    <div class="column-drop column-weapon">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="column-drop column-gender">
+                                        <p>Pol</p>
+                                    </div>
+                                    <div class="column-drop column-age">
+                                        <p>Seniori</p>
+                                    </div>
+                                    <div class="column-drop column-document">
+                                            <a href="#"><p>Rezultati</p></a>
+                                    </div> 
+                                </div> 
+                            </div>
+
+                        </div>
+
 
                        
 
@@ -326,9 +402,6 @@
                 </g>
                 <g id="facebook">
                     <path xmlns="http://www.w3.org/2000/svg"  d="M57.378,0.001H3.352C1.502,0.001,0,1.5,0,3.353v54.026c0,1.853,1.502,3.354,3.352,3.354h29.086V37.214h-7.914v-9.167h7.914 v-6.76c0-7.843,4.789-12.116,11.787-12.116c3.355,0,6.232,0.251,7.071,0.36v8.198l-4.854,0.002c-3.805,0-4.539,1.809-4.539,4.462 v5.851h9.078l-1.187,9.166h-7.892v23.52h15.475c1.852,0,3.355-1.503,3.355-3.351V3.351C60.731,1.5,59.23,0.001,57.378,0.001z"/>
-                </g>
-                <g id="gallery">
-                    <path xmlns="http://www.w3.org/2000/svg" d="M416 64H96a64.07 64.07 0 00-64 64v256a64.07 64.07 0 0064 64h320a64.07 64.07 0 0064-64V128a64.07 64.07 0 00-64-64zm-80 64a48 48 0 11-48 48 48.05 48.05 0 0148-48zM96 416a32 32 0 01-32-32v-67.63l94.84-84.3a48.06 48.06 0 0165.8 1.9l64.95 64.81L172.37 416zm352-32a32 32 0 01-32 32H217.63l121.42-121.42a47.72 47.72 0 0161.64-.16L448 333.84z"/>
                 </g>
                 <g id="home">
                     <path xmlns="http://www.w3.org/2000/svg" d="M261.56 101.28a8 8 0 00-11.06 0L66.4 277.15a8 8 0 00-2.47 5.79L63.9 448a32 32 0 0032 32H192a16 16 0 0016-16V328a8 8 0 018-8h80a8 8 0 018 8v136a16 16 0 0016 16h96.06a32 32 0 0032-32V282.94a8 8 0 00-2.47-5.79z"/><path xmlns="http://www.w3.org/2000/svg" d="M490.91 244.15l-74.8-71.56V64a16 16 0 00-16-16h-48a16 16 0 00-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0043 267.56L250.5 69.28a8 8 0 0111.06 0l207.52 198.28a16 16 0 0022.59-.44c6.14-6.36 5.63-16.86-.76-22.97z"/>

@@ -4,71 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-resources/favicon-16x16.png">
+    <link rel="manifest" href="/favicon-resources/site.webmanifest">
+    <link rel="mask-icon" href="/favicon-resources/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>MK Crvena zvezda | Uprava</title>
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/administration.css">
+    <script defer src="JS/script.js"></script>
+    
 
+    
 </head>
 <body>
-    <header class="header">
-        <div class = "heading">
-            <img class = "fencer" src="/img/LevoMacevalac current 1.png" alt="">
-            <!-- <img class = "crest" src="/img/naslov.png" alt=""> -->
-            <div class="crest">
-            <h1 class="headline">CRVENA</h1>
-            <a href="index.html"><img class="crest" src="/img/grb.png" alt=""></a>
-            <h1 class="headline">ZVEZDA</h1>
-            </div>
-            
-            <img class = "fencer" src="/img/DesnoMacevalac current 1.png" alt="">
+   
+    <div class = "header-info background-grey">
+        <div class="crest">
+            <h1 class="headline headline-header-info headline-red">CRVENA</h1>               
+            <h1 class="headline headline-header-info headline-white">ZVEZDA</h1>
         </div>
-        <nav class="navbar">
+        <p>Prati nas na</p>
+
+        <a class="icon-social" href="#">
+            <svg  viewBox="0 0 60.734 60.733" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                <use xlink:href="#facebook"></use>
+            </svg>
+        </a>
+        <a class="icon-social" href="#">
+            <svg  viewBox="0 0 455.73 455.73" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                <use xlink:href="#instagram"></use>
+            </svg>
+        </a>       
+    </div>     
+
+        <nav>
             <ul class="nav-btns">
-                <li><a  href="index.html" class = "btn-nav btn-click"><img src="/img/home.png" alt="" class="icon"> Naslovna</a></li>
-                <li><a href="news.html" class = "btn-nav btn-click"><img src="/img/news.png" alt="" class="icon"> Vesti</a></li>
-                <li><a href="results.html" class = "btn-nav btn-click"><img src="/img/results.png" alt="" class="icon"> Rezultati</a></li>
-                <li><a href="gallery.html" class = "btn-nav btn-click"><img src="/img/gallery.png" alt="" class="icon"> Galerija</a></li>
+                <li>
+                    <a href="index.html">
+                        <p class ="btn-nav">
+                            <svg class="icon-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                <use xlink:href="#home"></use>
+                            </svg>Naslovna
+                            
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html" >
+                        <p class ="btn-nav">
+                            <svg class="icon-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                <use xlink:href="#news"></use>
+                            </svg>Vesti
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="results.html">
+                        <p class ="btn-nav">
+                            <svg class="icon-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                <use xlink:href="#results"></use>
+                            </svg>Rezultati
+                        </p>
+                    </a>
+                </li>
+
                 <li class="dropdown">
-                    <a href="#" class = "btn-nav"><img src="/img/club.png" alt="" class="icon"> Klub<img class="pointer" src="/img/pointer.png" alt=""></a>
+                    <a href="#">
+                        <p class ="btn-nav">
+                            <svg class="icon-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                <use xlink:href="#club"></use>
+                            </svg>Klub
+                            <svg class="icon-nav pointer" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                <use xlink:href="#pointer"></use>
+                            </svg>
+                        </p>
+                    </a>
                     <div class="dropdown-menu">
-                        <a class="drop-item" href="administration.html">Uprava</a>
-                        <a class="drop-item" href="coaches.html">Treneri</a>
-                        <a class="drop-item" href="documents.html">Dokumenta</a>
-                        <a class="drop-item last-item" href="history.html">Istorijat</a>
-                    </div></li>
-                <li><a href="contact.html" class = "btn-nav btn-click"><img src="/img/contact.png" alt="" class="icon"> Kontakt</a></li>
+                        <a class="drop-item drop-item-active" href="administration.html"><p class="drop-item-p  ">Uprava</p></a>
+                        <a class="drop-item" href="coaches.html"><p class="drop-item-p">Treneri</p></a>
+                        <a class="drop-item" href="documents.html"><p class="drop-item-p">Dokumenta</p></a>
+                        <a class="drop-item" href="history.html"><p class="drop-item-p">Istorijat</p></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <p class ="btn-nav">                      
+                            <svg class="icon-nav" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                <use xlink:href="#contact"></use>
+                            </svg>Kontakt
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
-    </header>
 
-    <div class="container">
 
-        <section class="img-box sticky-box">
-            <img class="img-box-pic" src="/img/levo.jpg" alt="">
-        </section>
+        <div class="container">
+            <section class="content content-administration">
+               
+                   <div class="administration-president">
+                       <h2>Predsednik kluba</h2>
+                       <div class="administration-president-person">
+                            <div class="administration-container-img">
+                                <img class="img" src="/img/people/Ceca.jpg" alt="">
+                            </div>
+                            <p>Svetlana Petronijevic</p>
+                        </div>
+                   </div>
+                   
+                
+            </section>    
+         </div>
 
-        <section class="content content-administration">
+         <svg display="none">
+            <defs>
+                <g id="club">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M428 224H288a48 48 0 01-48-48V36a4 4 0 00-4-4h-92a64 64 0 00-64 64v320a64 64 0 0064 64h224a64 64 0 0064-64V228a4 4 0 00-4-4zm-92 160H176a16 16 0 010-32h160a16 16 0 010 32zm0-80H176a16 16 0 010-32h160a16 16 0 010 32z"/><path xmlns="http://www.w3.org/2000/svg" d="M419.22 188.59L275.41 44.78a2 2 0 00-3.41 1.41V176a16 16 0 0016 16h129.81a2 2 0 001.41-3.41z"/>
+                </g>
+                <g id="contact">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z"/>
+                </g>
+                <g id="facebook">
+                    <path xmlns="http://www.w3.org/2000/svg"  d="M57.378,0.001H3.352C1.502,0.001,0,1.5,0,3.353v54.026c0,1.853,1.502,3.354,3.352,3.354h29.086V37.214h-7.914v-9.167h7.914 v-6.76c0-7.843,4.789-12.116,11.787-12.116c3.355,0,6.232,0.251,7.071,0.36v8.198l-4.854,0.002c-3.805,0-4.539,1.809-4.539,4.462 v5.851h9.078l-1.187,9.166h-7.892v23.52h15.475c1.852,0,3.355-1.503,3.355-3.351V3.351C60.731,1.5,59.23,0.001,57.378,0.001z"/>
+                </g>
+                <g id="home">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M261.56 101.28a8 8 0 00-11.06 0L66.4 277.15a8 8 0 00-2.47 5.79L63.9 448a32 32 0 0032 32H192a16 16 0 0016-16V328a8 8 0 018-8h80a8 8 0 018 8v136a16 16 0 0016 16h96.06a32 32 0 0032-32V282.94a8 8 0 00-2.47-5.79z"/><path xmlns="http://www.w3.org/2000/svg" d="M490.91 244.15l-74.8-71.56V64a16 16 0 00-16-16h-48a16 16 0 00-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0043 267.56L250.5 69.28a8 8 0 0111.06 0l207.52 198.28a16 16 0 0022.59-.44c6.14-6.36 5.63-16.86-.76-22.97z"/>
+                </g>
+                <g id="instagram">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33 C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33 c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M303.36,108.66H152.37 c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M303.36,108.66 H152.37c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M0,0v455.73h455.73 V0H0z M380.23,303.36c0,42.39-34.48,76.87-76.87,76.87H152.37c-42.39,0-76.87-34.48-76.87-76.87V152.37 c0-42.39,34.48-76.87,76.87-76.87h150.99c42.39,0,76.87,34.48,76.87,76.87V303.36z M303.36,108.66H152.37 c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55 c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33 C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33 c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M303.36,108.66H152.37 c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55 c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33 C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33 c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M303.36,108.66H152.37 c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z"/>
+                </g>
+                <g id="news">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M439.91 112h-23.82a.09.09 0 00-.09.09V416a32 32 0 0032 32 32 32 0 0032-32V152.09A40.09 40.09 0 00439.91 112z"/><path xmlns="http://www.w3.org/2000/svg" d="M384 416V72a40 40 0 00-40-40H72a40 40 0 00-40 40v352a56 56 0 0056 56h342.85a1.14 1.14 0 001.15-1.15 1.14 1.14 0 00-.85-1.1A64.11 64.11 0 01384 416zM96 128a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16h-64a16 16 0 01-16-16zm208 272H112.45c-8.61 0-16-6.62-16.43-15.23A16 16 0 01112 368h191.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 400zm0-64H112.45c-8.61 0-16-6.62-16.43-15.23A16 16 0 01112 304h191.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 336zm0-64H112.45c-8.61 0-16-6.62-16.43-15.23A16 16 0 01112 240h191.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 272zm0-64h-63.55c-8.61 0-16-6.62-16.43-15.23A16 16 0 01240 176h63.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 208zm0-64h-63.55c-8.61 0-16-6.62-16.43-15.23A16 16 0 01240 112h63.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 144z"/>
+                </g>		
+                <g id="pointer">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/>
+                </g>
+                <g id="results">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M464 80h-60.1a4 4 0 01-4-4V63.92a32 32 0 00-32-31.92l-223.79.26a32 32 0 00-31.94 31.93V76a4 4 0 01-4 4H48a16 16 0 00-16 16v16c0 54.53 30 112.45 76.52 125.35a7.82 7.82 0 015.55 5.9c5.77 26.89 23.52 52.5 51.41 73.61 20.91 15.83 45.85 27.5 68.27 32.48a8 8 0 016.25 7.8V444a4 4 0 01-4 4h-59.55c-8.61 0-16 6.62-16.43 15.23A16 16 0 00176 480h159.55c8.61 0 16-6.62 16.43-15.23A16 16 0 00336 448h-60a4 4 0 01-4-4v-86.86a8 8 0 016.25-7.8c22.42-5 47.36-16.65 68.27-32.48 27.89-21.11 45.64-46.72 51.41-73.61a7.82 7.82 0 015.55-5.9C450 224.45 480 166.53 480 112V96a16 16 0 00-16-16zM112 198.22a4 4 0 01-6 3.45c-10.26-6.11-17.75-15.37-22.14-21.89-11.91-17.69-19-40.67-19.79-63.63a4 4 0 014-4.15h40a4 4 0 014 4c-.02 27.45-.07 58.87-.07 82.22zm316.13-18.44c-4.39 6.52-11.87 15.78-22.13 21.89a4 4 0 01-6-3.46c0-26.51 0-56.63-.05-82.21a4 4 0 014-4h40a4 4 0 014 4.15c-.79 22.96-7.9 45.94-19.81 63.63z"/>
+                </g>
+            </defs>
+        </svg>
 
-           
-        </section>
-
-        <section class="img-box sticky-box">
-            <img class="img-box-pic" src="/img/desno.jpg" alt="">
-        </section>
-
-    </div>
-    
-    <footer class="footer">
-        <section class="footer-content">
-        <div class="social">
-           <a href="#"><img class="facebook" src="/img/facebook32.png" alt=""></a> 
-           <a href="#"><img class="instagram" src="/img/instagram32.png" alt=""></a>
-        </div>
-        <div class="terms">
-        <p> &copy;2021 Mačevalački Klub Crvena zvezda. Sva prava zadržana.</p>
-        </div>
-        </section>
-    </footer>
-    
-</body>
-</html>
+    </body>
+    </html>

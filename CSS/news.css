@@ -36,6 +36,8 @@
 
 .news-date {
     padding-right: 2rem;
+    color: rgb(0, 0, 0, .6);
+    font-weight: 500;
 }
 
 .news-outline {
