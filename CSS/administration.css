@@ -5,16 +5,28 @@
 }
 
 
-.administration-president {
+.administration-section {
     width: 90%;
     height: 20rem;  
     display: flex;
     align-items: center;
 }
 
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.administration-people {
+    display: flex;
+    flex-direction: column;
+}
+
 .administration-container-img {
-    width: 30%;
-    height: 90%;
-    display: inline-block;
+    width: 50%;
+    height: 12rem;
+
 }
 
