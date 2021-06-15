@@ -14,14 +14,19 @@
     margin-top: 2rem;
 }
 
+.select-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
 .select-wrapper {
     position: relative;
     user-select: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    padding: 0 2rem;
 }
 
 .label {
@@ -30,6 +35,7 @@
     font-size: 1.5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-right: .5rem;
+    margin-left: 2rem;
 }
 
 .select {
@@ -37,7 +43,7 @@
     display: flex;
     flex-direction: column;
     height: 2.5rem;
-    width: 11rem;
+    width: 170px;
     border: 1px solid rgb(155, 5, 5);
 }
 .select-trigger {
@@ -59,7 +65,7 @@
 .options {
     position: absolute;
     display: block;
-    width: 101%;
+    width: 101.5%;
     height: 150px;
     top: 100%;
     left: -.5%;

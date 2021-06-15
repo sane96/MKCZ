@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-resources/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-resources/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-resources/favicon-16x16.png">
-    <link rel="manifest" href="/favicon-resources/site.webmanifest">
-    <link rel="mask-icon" href="/favicon-resources/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-resources/favicon-16x16.png">
+    <link rel="manifest" href="favicon-resources/site.webmanifest">
+    <link rel="mask-icon" href="favicon-resources/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>MK Crvena zvezda | Naslovna</title>
@@ -32,9 +32,9 @@
        
         <div class="swiper-wrapper">
         
-            <div class="swiper-slide"><img src="/img/img-slider-2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/img-slider-3.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="/img/img-slider-4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/img-slider-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/img-slider-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/img-slider-4.jpg" alt=""></div>
         </div>
         
         <div class="swiper-pagination"></div>
@@ -58,7 +58,7 @@
 
     <div class="crest-home">
             <h1 class="headline headline-home headline-red">CRVENA</h1>
-            <a href="index.html"><img class="crest-img-home" src="/img/grb.png" alt=""></a>
+            <img class="crest-img-home" src="img/grb.png" alt="">
             <h1 class="headline headline-home headline-white">ZVEZDA</h1>
     </div>   
     
@@ -136,68 +136,336 @@
 
 
             <section class="showcase-content">
-                <p class="section-tittle">Najnoviji rezultati : ...</p>
+                <div class="results-column-type">
+                    <div class="column-type column-name">
+                        <p>Takmicenje</p>
+                    </div>
+                    <div class="column-type column-place">
+                        <p>Mesto</p>
+                    </div>
+                    <div class="column-type column-date">
+                        <p>Datum</p>
+                    </div>
+                    <div class="column-type column-weapon">
+                        <p>Oruzije</p>
+                    </div>
+                    <div class="column-type column-gender">
+                        <p>Pol</p>
+                    </div>
+                    <div class="column-type column-age">
+                        <p>Kategorija</p>
+                    </div>
+                    <div class="column-type column-document">
+                        <p>Dokumenti</p>
+                    </div>
+                </div>
+                
+                <div class="results-table">
+                    <div class="results-single">
+                        <div class="results-outline">
+                            <div class="column column-name">
+                                <div class="column-pointer">                         
+                                    <svg class="pointer-results" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                        <use xlink:href="#pointer"></use>
+                                    </svg>
+                                </div>  
+                                <p>Drzavno Prvenstvo</p>
+                            </div>
+                            <div class="column column-place">
+                                <p>Beograd</p>
+                            </div>
+                            <div class="column column-date">
+                                <p>13.6.2021.</p>
+                            </div>
+                            <div class="column column-weapon">
+                                <p>3</p>
+                            </div>
+                            <div class="column column-gender">
+                                <p>Pol</p>
+                            </div>
+                            <div class="column column-age">
+                                <p>Seniori</p>
+                            </div>
+                            <div class="column column-document">
+                                <a href="#"><p>Pozivno pismo</p></a>
+                            </div>
+                        </div>
+
+                        <div class="results-dropdown">
+                            <div class="results-dropdown-single">
+                                <div class="column-drop column-name">                               
+                                    <p>Drzavno Prvenstvo</p>
+                                </div>
+                                <div class="column-drop column-place">
+                                    <p>Beograd</p>
+                                </div>
+                                <div class="column-drop column-date">
+                                    <p>13.6.2021.</p>
+                                </div>
+                                <div class="column-drop column-weapon">
+                                    <p>3</p>
+                                </div>
+                                <div class="column-drop column-gender">
+                                    <p>Pol</p>
+                                </div>
+                                <div class="column-drop column-age">
+                                    <p>Seniori</p>
+                                </div>
+                                <div class="column-drop column-document">
+                                        <a href="#"><p>Rezultati</p></a>
+                                </div> 
+                            </div> 
+                            <div class="results-dropdown-single">
+                                <div class="column-drop column-name">                               
+                                    <p>Drzavno Prvenstvo</p>
+                                </div>
+                                <div class="column-drop column-place">
+                                    <p>Beograd</p>
+                                </div>
+                                <div class="column-drop column-date">
+                                    <p>13.6.2021.</p>
+                                </div>
+                                <div class="column-drop column-weapon">
+                                    <p>3</p>
+                                </div>
+                                <div class="column-drop column-gender">
+                                    <p>Pol</p>
+                                </div>
+                                <div class="column-drop column-age">
+                                    <p>Seniori</p>
+                                </div>
+                                <div class="column-drop column-document">                                           
+                                        <a href="#"><p>Rezultati</p></a>
+                                </div> 
+                            </div> 
+                        </div>
+
+                    </div>
+
                     
+                    <div class="results-single">
+                        <div class="results-outline">
+                            <div class="column column-name">
+                                <div class="column-pointer">                         
+                                    <svg class="pointer-results" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                        <use xlink:href="#pointer"></use>
+                                    </svg>
+                                </div>  
+                                <p>Drzavno Prvenstvo</p>
+                            </div>
+                            <div class="column column-place">
+                                <p>Beograd</p>
+                            </div>
+                            <div class="column column-date">
+                                <p>13.6.2021.</p>
+                            </div>
+                            <div class="column column-weapon">
+                                <p>3</p>
+                            </div>
+                            <div class="column column-gender">
+                                <p>Pol</p>
+                            </div>
+                            <div class="column column-age">
+                                <p>Seniori</p>
+                            </div>
+                            <div class="column column-document">
+                                <a href="#"><p>Pozivno pismo</p></a>
+                            </div>
+                        </div>
+
+                        <div class="results-dropdown">
+                            <div class="results-dropdown-single">
+                                <div class="column-drop column-name">                               
+                                    <p>Drzavno Prvenstvo</p>
+                                </div>
+                                <div class="column-drop column-place">
+                                    <p>Beograd</p>
+                                </div>
+                                <div class="column-drop column-date">
+                                    <p>13.6.2021.</p>
+                                </div>
+                                <div class="column-drop column-weapon">
+                                    <p>3</p>
+                                </div>
+                                <div class="column-drop column-gender">
+                                    <p>Pol</p>
+                                </div>
+                                <div class="column-drop column-age">
+                                    <p>Seniori</p>
+                                </div>
+                                <div class="column-drop column-document">
+                                        <a href="#"><p>Rezultati</p></a>
+                                </div> 
+                            </div> 
+                            <div class="results-dropdown-single">
+                                <div class="column-drop column-name">                               
+                                    <p>Drzavno Prvenstvo</p>
+                                </div>
+                                <div class="column-drop column-place">
+                                    <p>Beograd</p>
+                                </div>
+                                <div class="column-drop column-date">
+                                    <p>13.6.2021.</p>
+                                </div>
+                                <div class="column-drop column-weapon">
+                                    <p>3</p>
+                                </div>
+                                <div class="column-drop column-gender">
+                                    <p>Pol</p>
+                                </div>
+                                <div class="column-drop column-age">
+                                    <p>Seniori</p>
+                                </div>
+                                <div class="column-drop column-document">
+                                        <a href="#"><p>Rezultati</p></a>
+                                </div> 
+                            </div> 
+                        </div>
+
+                    </div>
+
+                    <div class="results-single">
+                        <div class="results-outline">
+                            <div class="column column-name">
+                                <div class="column-pointer">                         
+                                    <svg class="pointer-results" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                        <use xlink:href="#pointer"></use>
+                                    </svg>
+                                </div>  
+                                <p>Drzavno Prvenstvo</p>
+                            </div>
+                            <div class="column column-place">
+                                <p>Beograd</p>
+                            </div>
+                            <div class="column column-date">
+                                <p>13.6.2021.</p>
+                            </div>
+                            <div class="column column-weapon">
+                                <p>3</p>
+                            </div>
+                            <div class="column column-gender">
+                                <p>Pol</p>
+                            </div>
+                            <div class="column column-age">
+                                <p>Seniori</p>
+                            </div>
+                            <div class="column column-document">
+                                <a href="#"><p>Pozivno pismo</p></a>
+                            </div>
+                        </div>
+
+                        <div class="results-dropdown">
+                            <div class="results-dropdown-single">
+                                <div class="column-drop column-name">                               
+                                    <p>Drzavno Prvenstvo</p>
+                                </div>
+                                <div class="column-drop column-place">
+                                    <p>Beograd</p>
+                                </div>
+                                <div class="column-drop column-date">
+                                    <p>13.6.2021.</p>
+                                </div>
+                                <div class="column-drop column-weapon">
+                                    <p>3</p>
+                                </div>
+                                <div class="column-drop column-gender">
+                                    <p>Pol</p>
+                                </div>
+                                <div class="column-drop column-age">
+                                    <p>Seniori</p>
+                                </div>
+                                <div class="column-drop column-document">
+                                        <a href="#"><p>Rezultati</p></a>
+                                </div> 
+                            </div> 
+                            <div class="results-dropdown-single">
+                                <div class="column-drop column-name">                               
+                                    <p>Drzavno Prvenstvo</p>
+                                </div>
+                                <div class="column-drop column-place">
+                                    <p>Beograd</p>
+                                </div>
+                                <div class="column-drop column-date">
+                                    <p>13.6.2021.</p>
+                                </div>
+                                <div class="column-drop column-weapon">
+                                    <p>3</p>
+                                </div>
+                                <div class="column-drop column-gender">
+                                    <p>Pol</p>
+                                </div>
+                                <div class="column-drop column-age">
+                                    <p>Seniori</p>
+                                </div>
+                                <div class="column-drop column-document">
+                                        <a href="#"><p>Rezultati</p></a>
+                                </div> 
+                            </div> 
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="read-more">
+                    <p></p>  <a class="btn-read-more" href="results.html">&rang; Procitaj vise</a>
+                </div>     
                
                 
             </section>
             
             <section class="showcase-content">
                 <div class="news-single">
-                    <div class="news-header">
-                        <p class="news-date"><time>25.05.2021</time></p>
-                        <h3 class="news-headline">PRVA VEST</h3>
-                    </div>   
-                    <div class="news-outline">
-                        <div class="news-img-container">
-                            <img class="news-img-outline" src="/img/stadion.jpg" alt=""> 
-                        </div>
-                        <div class="news-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi </p>
-                            <div class="read-more">
-                                <a class="btn-read-more" href="#">&rang; Procitaj vise</a>
+                    <a class="news-link" href="#"></a>
+                        <div class="news-header">
+                            <p class="news-date"><time>25.05.2021</time></p>
+                            <h3 class="news-headline">PRVA VEST</h3>
+                        </div>   
+                        <div class="news-outline">
+                            <div class="news-img-container">
+                                <img class="img" src="/img/stadion.jpg" alt=""> 
                             </div>
-                        </div>
-                    </div>                       
-                </div>
-                
-                <div class="news-single">
-                    <div class="news-header">
-                        <p class="news-date"><time>25.05.2021</time></p>
-                        <h3 class="news-headline">PRVA VEST</h3>
-                    </div>   
-                    <div class="news-outline">
-                        <div class="news-img-container">
-                            <img class="news-img-outline" src="/img/stadion.jpg" alt=""> 
-                        </div>
-                        <div class="news-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi </p>
-                            <div class="read-more">
-                                <a class="btn-read-more" href="#">&rang; Procitaj vise</a>
+                            <div class="news-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa accusamus veritatis fugit, quasi cumque. Ea a ipsam commodi dolores quis praesentium fugit voluptates, dignissimos harum voluptate officiis, ex doloremque eius iure?</p>
                             </div>
-                        </div>
-                    </div>                       
+                        </div>                       
                 </div>
 
                 <div class="news-single">
-                    <div class="news-header">
-                        <p class="news-date"><time>25.05.2021</time></p>
-                        <h3 class="news-headline">PRVA VEST</h3>
-                    </div>   
-                    <div class="news-outline">
-                        <div class="news-img-container">
-                            <img class="news-img-outline" src="/img/stadion.jpg" alt=""> 
-                        </div>
-                        <div class="news-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi </p>
-                            <div class="read-more">
-                                <a class="btn-read-more" href="#">&rang; Procitaj vise</a>
+                    <a class="news-link" href="#"></a>
+                        <div class="news-header">
+                            <p class="news-date"><time>25.05.2021</time></p>
+                            <h3 class="news-headline">PRVA VEST</h3>
+                        </div>   
+                        <div class="news-outline">
+                            <div class="news-img-container">
+                                <img class="img" src="/img/stadion.jpg" alt=""> 
                             </div>
-                        </div>
-                    </div>                       
+                            <div class="news-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa accusamus veritatis fugit, quasi cumque. Ea a ipsam commodi dolores quis praesentium fugit voluptates, dignissimos harum voluptate officiis, ex doloremque eius iure?</p>
+                            </div>
+                        </div>                       
                 </div>
-                    
-              
+
+                <div class="news-single">
+                    <a class="news-link" href="#"></a>
+                        <div class="news-header">
+                            <p class="news-date"><time>25.05.2021</time></p>
+                            <h3 class="news-headline">PRVA VEST</h3>
+                        </div>   
+                        <div class="news-outline">
+                            <div class="news-img-container">
+                                <img class="img" src="/img/stadion.jpg" alt=""> 
+                            </div>
+                            <div class="news-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa accusamus veritatis fugit, quasi cumque. Ea a ipsam commodi dolores quis praesentium fugit voluptates, dignissimos harum voluptate officiis, ex doloremque eius iure?</p>
+                            </div>
+                        </div>                       
+                </div>
+
+                <div class="read-more">
+                  <p></p><a class="btn-read-more" href="news.html">&rang; Procitaj vise</a>
+                </div>                                  
 
             </section>
 
@@ -212,28 +480,47 @@
     <div class="footer-body">
         <div class="footer-content">
             <div class="footer-contact">
-                <h3>Kontakt kluba</h3>
-                <p>Gen. sekretar Zoran Timic</p>
-                <p>mkczv@gmail.com</p>
-                <p>+381638088733</p>
+                <div class="footer-contact-headline">
+                    <h3>Kontakt kluba</h3>
+                </div>
+                <div class="footer-contact-info">
+                    <div class="footer-contact-left">                   
+                        <p><svg class="icon-footer" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                            <use xlink:href="#email-svg"></use>
+                        </svg> mkczv@gmail.com</p>
+                        <p><svg class="icon-footer" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                            <use xlink:href="#call-svg"></use>
+                        </svg> +381638088733</p>
+                    </div>  
+                    <hr class="footer-hr">  
+                    <div class="footer-contact-right">
+                        <p>Za vise informacija o </p>
+                        <p>treninzima kliknite <a href="contact.html">ovde</a></p>
+                    </div>    
+                </div>
+                
             </div>
             <div class="footer-social">
-                <a class="icon-social-footer" href="#">
-                    <svg  viewBox="0 0 60.734 60.733" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                        <use xlink:href="#facebook"></use>
-                    </svg>
-                </a>
-                <a class="icon-social-footer" href="#">
-                    <svg  viewBox="0 0 455.73 455.73" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                        <use xlink:href="#instagram"></use>
-                    </svg>
-                </a>
+                <p>Prati nas na</p>
+                <div class="icons-social-footer">
+                    <a class="icon-social-footer" href="#">
+                        <svg  viewBox="0 0 60.734 60.733" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="icon-social-footer" href="#">
+                        <svg  viewBox="0 0 455.73 455.73" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                </div>    
             </div>
         </div>
-        <img src="/img/grb.png" class= "grb-footer" alt="">
+        <img src="img/grb.png" class= "crest-footer" alt="">
     </div>
     <div class="terms-conditions">
         <p>&copy; 2021.Macevalacki klub Crvana zvezda.Sva prava zadrzana</p>
+        <p>Created by <a href="#">Danilo Santrac</a>.Designed by <a href="#">Luka Stamenic</a></p>
     </div>
 </footer>
 
@@ -263,6 +550,12 @@
         <g id="results">
 			<path xmlns="http://www.w3.org/2000/svg" d="M464 80h-60.1a4 4 0 01-4-4V63.92a32 32 0 00-32-31.92l-223.79.26a32 32 0 00-31.94 31.93V76a4 4 0 01-4 4H48a16 16 0 00-16 16v16c0 54.53 30 112.45 76.52 125.35a7.82 7.82 0 015.55 5.9c5.77 26.89 23.52 52.5 51.41 73.61 20.91 15.83 45.85 27.5 68.27 32.48a8 8 0 016.25 7.8V444a4 4 0 01-4 4h-59.55c-8.61 0-16 6.62-16.43 15.23A16 16 0 00176 480h159.55c8.61 0 16-6.62 16.43-15.23A16 16 0 00336 448h-60a4 4 0 01-4-4v-86.86a8 8 0 016.25-7.8c22.42-5 47.36-16.65 68.27-32.48 27.89-21.11 45.64-46.72 51.41-73.61a7.82 7.82 0 015.55-5.9C450 224.45 480 166.53 480 112V96a16 16 0 00-16-16zM112 198.22a4 4 0 01-6 3.45c-10.26-6.11-17.75-15.37-22.14-21.89-11.91-17.69-19-40.67-19.79-63.63a4 4 0 014-4.15h40a4 4 0 014 4c-.02 27.45-.07 58.87-.07 82.22zm316.13-18.44c-4.39 6.52-11.87 15.78-22.13 21.89a4 4 0 01-6-3.46c0-26.51 0-56.63-.05-82.21a4 4 0 014-4h40a4 4 0 014 4.15c-.79 22.96-7.9 45.94-19.81 63.63z"/>
 		</g>
+        <g id="email-svg">
+            <path xmlns="http://www.w3.org/2000/svg" d="M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z"/>
+        </g>
+        <g id="call-svg">
+            <path xmlns="http://www.w3.org/2000/svg" d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z"/>
+        </g>
 	</defs>
 </svg>
 

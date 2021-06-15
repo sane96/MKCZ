@@ -43,12 +43,14 @@
     border-left: 3px solid rgb(150, 5, 5);
     padding-left: 2rem;
     color: rgb(150, 5, 5);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
 }
 
 .news-date {
     padding-right: 2rem;
-    color: rgb(0, 0, 0, .6);
-    font-weight: 500;
+    color: rgb(0, 0, 0, .4);
+    font-weight: 600;
 }
 
 .news-outline {
@@ -64,7 +66,7 @@
 }
 
 .news-text {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     width: 80%;
     height: 100%;
     display: flex;
@@ -72,61 +74,30 @@
     justify-content: space-between;
 }
 
-.btn-read-more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0 0;
-    color: rgb(150, 5, 5);
-    font-family: Georgia, 'Roboto', sans-serif;
-    font-weight: 600;
-    position: relative;
-    /* overflow: hidden; */
-}
-
-.btn-read-more::after {
-    content: '';
-    background-color: rgb(150, 5, 5);
-    width: 0%;
-    height: 3px;
-    position: absolute;
-    left: 5%;
-    bottom: -10%;
-    transition: width .3s ease-in;  
-}
-
-.btn-read-more:hover::after {
-    width: 100%;
-    
+.news-text p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
 }
 
 
-.read-more {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: .5rem;
-    padding-right: 1.5rem;
-}
 
 /* Pagination */
 .pagination-news {
     display: flex;
     justify-content: center;
+    width: 80%;
     margin-top: 2rem;
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 83%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,1) 83%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,1) 83%,rgba(255,255,255,0) 100%);
   }
   
   .pagination-news a {
     color: black;
-    padding: 8px 16px;
-    margin: 0 .5rem;
+    padding: 16px 28px;
     color: rgb(150, 5, 5);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: background .5s;
   }
   
@@ -136,7 +107,7 @@
   }
   
   .pagination-news a:hover:not(.active) {
-      background-color: rgb(255, 255, 255, .8);
+      background-color: rgb(0, 0, 0, .1)
       
     }
 
