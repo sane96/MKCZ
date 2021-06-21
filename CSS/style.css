@@ -193,6 +193,25 @@ nav ul li {
     bottom: 0;  
 }
 
+nav li > a {
+    position: relative;
+}
+
+nav li > a::before {
+    content: '';
+    background-color: rgb(150, 5, 5);
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    bottom: 0;    
+    transition: height .3s;
+    z-index: -1;
+}
+
+nav li:hover > a::before {
+    height: 100%;
+}
+
 nav li a {
     display: flex;
     justify-content: center;
@@ -216,7 +235,7 @@ nav li a {
     width: 100%; 
     border-right: 1px solid rgb(150, 5, 5);
     height: 100%;
-    /* transition: color .2s; */
+    transition: color .3s;
 }
 
 nav ul li:last-of-type a p.btn-nav {
@@ -228,12 +247,12 @@ nav ul li:last-of-type a p.btn-nav {
     height: 28px;
     fill: rgb(150, 5, 5);
     margin-right: 10px;
-    /* transition: fill .5s; */
+    transition: fill .3s;
 }
 
-li:hover {
+/* li:hover {
     background:rgb(150, 5, 5);
-}
+} */
 
 li:hover .btn-nav {    
     color: rgb(255, 255, 255); 
@@ -275,6 +294,7 @@ nav li:hover .icon-nav{
     background: rgba(255, 255, 255, 0.9);
     box-sizing: border-box;
     padding-top: .2rem;
+    z-index: -1;
 }
 
 .drop-item {
@@ -298,9 +318,20 @@ nav li:hover .icon-nav{
     content: '';
     background-color: rgb(150, 5, 5);
     width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 0; 
+}
+
+.drop-item::before {
+    content: '';
+    background-color: rgb(150, 5, 5);
+    width: 0px;
     height: 6vh;
     position: absolute;
     left: 0; 
+    z-index: -1;
+    transition: width .4s;
 }
 
 .drop-item-p {
@@ -313,7 +344,7 @@ nav li:hover .icon-nav{
     font-weight: 500;
     font-size: 1.1rem;
     border-bottom:  1px solid rgb(150, 5, 5);
-    /* transition: color .2s; */
+    transition: color .4s;
 }
 
 .drop-item:last-of-type p {
@@ -327,8 +358,8 @@ nav li:hover .icon-nav{
 }
 
 
-.drop-item:hover {
-    background-color: rgb(150, 5, 5);
+.drop-item:hover::before {
+    width: 100%;
 }
 
 .drop-item:hover .drop-item-p {
