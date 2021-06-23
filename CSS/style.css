@@ -4,7 +4,19 @@
 
 @font-face {
 	font-family: AcademyFilled;  
-	src: url(/AcademyFilled3D.ttf);  
+	src: url(../fonts/AcademyFilled3D.ttf);  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Oswald;  
+	src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Rubik;  
+	src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);  
 	font-weight: normal;  
 }
 
@@ -228,7 +240,7 @@ nav li a {
     justify-content: center;
     align-items: center;
     color: rgb(150, 5, 5);
-    font-family: 'Roboto', sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
     padding: .3rem 0;
@@ -291,7 +303,7 @@ nav li:hover .icon-nav{
     display: none;
     top: 100%;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, .9);
     box-sizing: border-box;
     padding-top: .2rem;
     z-index: -1;
@@ -302,7 +314,7 @@ nav li:hover .icon-nav{
     height: 6vh;
     padding: 0 0;
     margin-top: -1px;
-    font-family: 'Roboto', sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
     background: none;
@@ -331,7 +343,7 @@ nav li:hover .icon-nav{
     position: absolute;
     left: 0; 
     z-index: -1;
-    transition: width .4s;
+    transition: width .4s ease-in;
 }
 
 .drop-item-p {
@@ -344,7 +356,7 @@ nav li:hover .icon-nav{
     font-weight: 500;
     font-size: 1.1rem;
     border-bottom:  1px solid rgb(150, 5, 5);
-    transition: color .4s;
+    transition: color .5s ;
 }
 
 .drop-item:last-of-type p {
@@ -537,7 +549,7 @@ nav li:hover .icon-nav{
 
 
 .footer-contact p a:hover::before {
-    height: 130%;
+    height: 120%;
     border-radius: 4px;
 }
 
