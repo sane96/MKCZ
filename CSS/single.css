@@ -11,16 +11,28 @@
 }
 
 .news-post-headline h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(150, 5, 5);
+    font-size: 2.5rem;
     margin-bottom: .5rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .news-post-outline p {
+    font-family: Roboto-Slab;
+    font-size: 1.2rem;
     font-weight: 500;
-    font-size: 18px;
-    
+    color: rgb(0, 0, 0, .7);
+}   
+
+.news-post-text p {
+    font-family: Roboto-Slab;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2rem;
 }
+    
+
 
 .news-post-date {
     margin: 1rem 0;
