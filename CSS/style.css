@@ -388,26 +388,6 @@ nav li:hover .icon-nav{
     /* background: url(/img/background-finished-2.svg) center center /cover; */
 }
 
-
-
-/* .background {
-    flex-basis: 100px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    position: relative;
-    background: url(/img/background-finished-2.svg)  center center /cover;
-} */
-
-.container::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: rgb(255, 255, 255, .7); */
-}
-
 /* Content */
 .content {
     flex-shrink: 0;
@@ -457,7 +437,7 @@ nav li:hover .icon-nav{
 }
 
 .footer-contact {
-    width: 50%;
+    width: 71%;
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -493,7 +473,7 @@ nav li:hover .icon-nav{
 }
 
 .footer-contact-left {
-    width: 42%;
+    width: 50%;
 }
 
 .footer-contact-right{
@@ -519,17 +499,48 @@ nav li:hover .icon-nav{
 }
 
 
-.footer-contact p a {
+.footer-contact-left p a {
+    color: rgb(255, 255, 255);
+    margin-left: 1rem;
+    position: relative;
+    z-index: 11;
+    font-weight: 600;
+    transition: color .4s;
+}
+
+.footer-contact-left p a::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: -6px; 
+    width: 100%;
+    height: 0;
+    padding: 1px 6px;
+    background: rgb(255, 255, 255);
+    border-radius: 0;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.footer-contact-left p a:hover {
+    color: rgb(150, 5, 5);
+}
+
+.footer-contact-left p a:hover::before {
+    height: 100%;
+    border-radius: 4px;
+}
+
+.footer-contact-right p a {
     color: rgb(155, 5, 5);
-    display: flex;
-    align-items: center;
     margin-left: 1rem;
     font-weight: 600;
     position: relative;
     z-index: 11;
 }
 
-.footer-contact p a::before {
+
+.footer-contact-right p a::before {
     content: '';
     position: absolute;
     width: 130%;
@@ -543,7 +554,7 @@ nav li:hover .icon-nav{
 }
 
 
-.footer-contact p a:hover::before {
+.footer-contact-right p a:hover::before {
     height: 120%;
     border-radius: 4px;
 }
@@ -603,7 +614,7 @@ nav li:hover .icon-nav{
 
 .crest-footer {
     width:initial;
-    margin-bottom: -5.3rem;
+    margin-bottom: -5.4rem;
     z-index: 10;
 }
 
@@ -628,7 +639,7 @@ nav li:hover .icon-nav{
 }
 
 .terms-conditions a:hover {
-    color: rgb(155, 5, 5);
+    color: rgb(200, 5, 5);
 }
 
 

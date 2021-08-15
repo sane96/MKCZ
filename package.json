@@ -1,19 +1,5 @@
 {
   "name": "mkcz",
-<<<<<<< HEAD
-  "version": "1.0.1",
-  "description": "Fencing club",
-  "type": "module",
-  "dependencies": {
-    "swiper": "^6.6.2"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.14.3",
-    "@babel/core": "^7.14.3",
-    "@babel/node": "^7.14.2",
-    "@babel/preset-env": "^7.14.2"
-  },
-=======
   "version": "1.0.2",
   "description": "Fencing club",
   "dependencies": {
@@ -21,7 +7,6 @@
     
   },
   "devDependencies": {},
->>>>>>> 2552cc8 (MKCZ v3)
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

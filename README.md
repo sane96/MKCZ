@@ -1,2 +1,2 @@
 # MKCZ
-Website for fencing club Red star from Belgrade, Serbia
+Website for "Red star" fencing club from Belgrade, Serbia

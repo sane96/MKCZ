@@ -5,31 +5,139 @@
 }
 
 
-.administration-section {
+.administration-section-1 {
+    width: 90%;
+    height: 23rem;  
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.administration-section-2 {
     width: 90%;
     height: 20rem;  
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    padding-left: 3rem;
 }
 
-.section-1 {
+.administration-card-president {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 
-.administration-people {
+.administration-card-secretary {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    height: 100%;
+}
+
+.administration-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.administration-container-img-president {
+    width: 60%;
+    height: 100%;
+    margin-top: auto;
 }
 
 .administration-container-img {
-    width: 50%;
-    height: 12rem;
-
+    width: 60%;
+    height: 60%;
+    margin-top: auto;
 }
 
+.administration-card-info {
+    width: 60%;
+    height: 4rem;
+    background: rgb(255, 255, 255, .7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.administration-card-info p {
+    font-size: 1.1rem;
+    font-family: Roboto-Slab;
+}
+
+.administration-card-info h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
+
+.title {
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(155, 5, 5);
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+.board-members {
+    align-self: flex-start;
+    margin-left: 13rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-member {
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0, .9);
+    font-family: Roboto-Slab;
+}
+
+.document {
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    color: rgb(155, 5, 5);
+    font-weight: 500;
+    position: relative;
+    transition: color .6s ease-in;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-self: flex-start;
+}
+
+.document::before {
+    content: '';
+    position: absolute;
+    bottom: -25%;
+    left: -5%;
+    width: 0;
+    height: 3px;
+    background-color: rgb(155, 5, 5);
+    transition: width .3s, height .3s .3s,border-radius .6s;
+    z-index: -1;
+}
+
+.document:hover {
+    color: rgb(255, 255, 255);  
+}
+
+.document:hover::before {
+    width: 110%;
+    height: 150%;
+    border-radius: 5px;
+}

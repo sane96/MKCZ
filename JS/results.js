@@ -1,24 +1,18 @@
 'use strict';
 
 const resultsOutline = document.querySelectorAll('.results-outline');
+const selects = document.querySelectorAll('.select');
+const competitions = document.querySelectorAll('.results-single');
 
 
+// Open select tables
 
-// document.querySelector('.custom-select-wrapper').addEventListener('click', function () {
-//     this.querySelector('.custom-select').classList.toggle('open');
-// })
 for (const dropdown of document.querySelectorAll(".select-wrapper")) {
     dropdown.addEventListener('click', function() {
         this.querySelector('.select').classList.toggle('open');
     })
 }
 
-// window.addEventListener('click', function (e) {
-//     const select = document.querySelector('.select')
-//     if (!select.contains(e.target)) {
-//         select.classList.remove('open');
-//     }
-// });
 
 window.addEventListener('click', function(e) {
     for (const select of document.querySelectorAll('.select')) {
@@ -28,6 +22,28 @@ window.addEventListener('click', function(e) {
     }
 });
 
+
+for (const option of document.querySelectorAll(".option")) {
+    option.addEventListener('click', function() {
+        if (!this.classList.contains('selected')) {
+            this.parentNode.querySelector('.option.selected').classList.remove('selected');
+            this.classList.add('selected');
+            this.closest('.select').querySelector('.select-trigger span').textContent = this.textContent;
+        }
+    })
+}
+
+
+selects.forEach(select => select.addEventListener('click', function(e) {
+    if(e.target.classList.contains('select-trigger') || e.target.parentElement.classList.contains('select-trigger')) return;
+    if(!(select.parentElement.firstElementChild.textContent === "Категорија")) return;
+    
+    competitions.forEach(competition => {
+        if(!(competition.firstElementChild.lastElementChild.previousElementSibling.textContent.trim() === e.target.textContent) && !(e.target.textContent === "Све")) competition.style.display = "none";
+        else competition.style.display = "flex";
+        return;
+    });
+}))
 
 // Opening result tabs
 resultsOutline.forEach(result => result.addEventListener('click', function(e) {
