@@ -2,23 +2,30 @@
 
 const contentElements = [...document.querySelector('.content').children];
 
+
 let startingCoords;
 
-async function initLoad(){
+
+const initLoad = function(){
     const hiddenElements = contentElements.map(el => el.classList.add('element-hidden', 'content-element'));
-    return hiddenElements
-    .then(function() {
+    
+    
+    revealElements();
+};
+
+
+
+const revealElements = function() {
     
     contentElements.forEach(ele => {
 
 
-    startingCoords = ele.getBoundingClientRect().top * 1.25;
+    startingCoords = ele.getBoundingClientRect().top * 1.15;
     if(startingCoords > window.innerHeight) return;
 
     ele.classList.remove('element-hidden');
-})
-
-})};
+});
+};
 
 initLoad();
 
