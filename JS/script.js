@@ -2,28 +2,22 @@
 
 const contentElements = [...document.querySelector('.content').children];
 
+contentElements.forEach(el => el.classList.add('content-element','element-hidden'));
 
-let startingCoords;
+const startingCoords = contentElements.map(ele => ele.getBoundingClientRect().top);
 
 
-const initLoad = function(){
-    const hiddenElements = contentElements.map(el => el.classList.add('element-hidden', 'content-element'));
+
+
+const initLoad = function() {
     
-    
-    revealElements();
-};
+    startingCoords.forEach(ele => {
 
+    // startingCoords = ele.getBoundingClientRect().top * 1.15;
+    if(ele > window.innerHeight) return;
 
+    contentElements[startingCoords.indexOf(ele)].classList.remove('element-hidden');
 
-const revealElements = function() {
-    
-    contentElements.forEach(ele => {
-
-
-    startingCoords = ele.getBoundingClientRect().top * 1.15;
-    if(startingCoords > window.innerHeight) return;
-
-    ele.classList.remove('element-hidden');
 });
 };
 
@@ -33,14 +27,14 @@ const revealContent = function(entries, observer) {
     const [entry] = entries;
 
     if(!entry.isIntersecting) return;
-    console.log(entry);
+
     entry.target.classList.remove('element-hidden');
     observer.unobserve(entry.target);
 };
 
 const contentObserver = new IntersectionObserver(revealContent, {
     root: null,
-    threshold: .25,   
+    threshold: .20,   
 });
 
 contentElements.forEach(function(ele) {
