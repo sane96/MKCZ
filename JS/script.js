@@ -41,3 +41,6 @@ contentElements.forEach(function(ele) {
     contentObserver.observe(ele);
        
 });
+
+// Make session
+// Remove local storage if not going back 
