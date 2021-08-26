@@ -60,7 +60,8 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 150px;
+    height: auto;
+    max-height: 150px;
     top: 100%;
     left: 0%;
     border: 1px solid rgb(155, 5, 5);
@@ -219,9 +220,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Roboto-Slab;
-    font-weight: 500;
-    font-size: 1.1;
+    font-family: Merriweather;
+    font-weight: 400;    
 }
 
 .column-name {
@@ -278,27 +278,39 @@
 }
 
 .column.column-document p { 
-    padding-left: 5px;
     font-size: 16px;
     color: rgb(155, 5, 5);
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
+    z-index: 3;
+    transition: .2s ease;
+}
+
+.column.column-document p:hover {
+    transition: color .2s .2s ease;
+    /* transform: scale(104%); */
+    color: rgb(255, 255, 255);
 }
 
 .column.column-document p::after {
     content: '';
+    z-index: -1;
     position: absolute;
     bottom: 0;
-    left: -10%;
-    width: 1px;
-    height: 0%;
+    left: 0;
+    width: 100%;  
+    height: 1px;
+    border-radius: 0;
     background-color: rgb(155, 5, 5);
-    transition: height .3s, width .1s .3s;
+    transition: .2s ease; 
 }
 
 .column.column-document p:hover::after {
-    height: 100%;
-    width: 4px;
+    bottom: -15%;
+    transform: scaleX(110%);
+    height: 130%;
+    border-radius: 3px;
+    transition: bottom .2s, transform .3s .2s ease,border-radius .3s .2s, height .3s .2s; 
 }
 
 .results-single:nth-of-type(2n) .results-outline .column p::after {
@@ -320,6 +332,13 @@
     border-color: rgb(255, 255, 255);
     fill: rgb(255, 255, 255);
 }
+
+
+.results-single:nth-of-type(2n) .results-outline .column.column-document p:hover {
+    color: rgb(155, 5, 5);
+    transition: color .2s .2s ease;
+}
+
 
 .results-dropdown {
     width: 100%;
@@ -349,7 +368,7 @@
     border-right: 1px solid rgb(255, 255, 255, .4);
     color: rgb(255, 255, 255);
     font-weight: 500;
-    font-family: Roboto-Slab;
+    font-family: Merriweather;
 }
 
 .results-dropdown-single:last-of-type {
@@ -360,8 +379,9 @@
     padding-left: 5px;
     font-size: 16px;
     color: rgb(255, 255, 255);
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
+    transition: all .1s;
 }
 
 .column-drop.column-document p::after {
@@ -372,12 +392,16 @@
     width: 1px;
     height: 0%;
     background-color: rgb(255, 255, 255);
-    transition: height .3s, width .1s .3s;
+    transition: height .2s .2s, width .1s .4s;
+}
+
+.column-drop.column-document p:hover {
+    font-size: 17px;
 }
 
 .column-drop.column-document p:hover::after {
+    width: 3px;
     height: 100%;
-    width: 4px;
 }
 
 

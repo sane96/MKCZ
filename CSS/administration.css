@@ -73,7 +73,7 @@
 
 .administration-card-info p {
     font-size: 1.1rem;
-    font-family: Roboto-Slab;
+    font-family: Merriweather;
 }
 
 .administration-card-info h3 {
@@ -104,7 +104,7 @@
     margin-top: .5rem;
     font-size: 1.2rem;
     color: rgb(0, 0, 0, .9);
-    font-family: Roboto-Slab;
+    font-family: Merriweather;
 }
 
 .document {

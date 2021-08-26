@@ -19,14 +19,14 @@
 }
 
 .news-post-outline p {
-    font-family: Roboto-Slab;
+    font-family: Merriweather;
     font-size: 1.2rem;
     font-weight: 500;
     color: rgb(0, 0, 0, .7);
 }   
 
 .news-post-text p {
-    font-family: Roboto-Slab;
+    font-family: Merriweather;
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 2rem;

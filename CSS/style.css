@@ -1,7 +1,4 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
 @font-face {
 	font-family: AcademyFilled;  
 	src: url(../fonts/AcademyFilled3D.ttf);  
@@ -9,12 +6,10 @@
 }
 
 @font-face {
-	font-family: Roboto-Slab;  
-	src: url(../fonts/Roboto-Slab/RobotoSlab-VariableFont_wght.ttf);  
+	font-family: Merriweather;  
+	src: url(../fonts/Merriweather/Merriweather-Regular.ttf);  
 	font-weight: normal;  
 }
-
-
 
 /* Style */
 
@@ -443,7 +438,7 @@ nav li:hover .icon-nav{
 }
 
 .footer-contact {
-    width: 71%;
+    width: 70%;
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -480,6 +475,7 @@ nav li:hover .icon-nav{
 
 .footer-contact-left {
     width: 50%;
+    padding-right: 2rem;
 }
 
 .footer-contact-right{
@@ -494,7 +490,8 @@ nav li:hover .icon-nav{
     display: flex;
     align-items: center;
     margin: .3rem 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-family: Merriweather;
 }
 
 .icon-footer {
@@ -510,7 +507,7 @@ nav li:hover .icon-nav{
     margin-left: 1rem;
     position: relative;
     z-index: 11;
-    font-weight: 600;
+    font-weight: 500;
     transition: color .4s;
 }
 
@@ -540,7 +537,7 @@ nav li:hover .icon-nav{
 .footer-contact-right p a {
     color: rgb(155, 5, 5);
     margin-left: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
     z-index: 11;
 }
@@ -566,7 +563,6 @@ nav li:hover .icon-nav{
 }
 
 .footer-hr {
-    clear: both;
     border: 0;
     height: 110%;
     display: block!important;
