@@ -2,11 +2,19 @@
 
 const contentElements = [...document.querySelector('.content').children];
 
-contentElements.forEach(el => el.classList.add('content-element','element-hidden'));
+// contentElements.forEach(el => el.style.setProperty ("transition", "transform 1s, opacity 1s"));
+contentElements.forEach(el => el.classList.add('element-hidden'));
+
+const elementTransition = window.getComputedStyle(contentElements[0]).transition;
+
+if(elementTransition === 'all 0s ease 0s') {
+        contentElements.forEach(el => el.style.transition = "transform 1s, opacity 1s") 
+}
+    else {
+        contentElements.forEach(el => el.style.transition = `transform 1s, opacity 1s, ${elementTransition}`);    
+}
 
 const startingCoords = contentElements.map(ele => ele.getBoundingClientRect().top);
-
-
 
 
 const initLoad = function() {
@@ -17,7 +25,7 @@ const initLoad = function() {
     if(ele > window.innerHeight) return;
 
     contentElements[startingCoords.indexOf(ele)].classList.remove('element-hidden');
-
+        
 });
 };
 
@@ -43,4 +51,5 @@ contentElements.forEach(function(ele) {
 });
 
 // Make session
-// Remove local storage if not going back 
+
+

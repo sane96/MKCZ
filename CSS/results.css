@@ -287,7 +287,7 @@
 }
 
 .column.column-document p:hover {
-    transition: color .2s .2s ease;
+    transition: color .3s .3s ease-in;
     /* transform: scale(104%); */
     color: rgb(255, 255, 255);
 }
@@ -310,7 +310,7 @@
     transform: scaleX(110%);
     height: 130%;
     border-radius: 3px;
-    transition: bottom .2s, transform .3s .2s ease,border-radius .3s .2s, height .3s .2s; 
+    transition: bottom .1s, transform .2s .1s ease,border-radius .2s .3s, height .2s .3s; 
 }
 
 .results-single:nth-of-type(2n) .results-outline .column p::after {

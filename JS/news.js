@@ -21,5 +21,17 @@ newsContent.addEventListener('click', function(e) {
     windowLoc = e.pageY;
     console.log(windowLoc);
     let setLoc = localStorage.setItem('windowLoc', `${windowLoc}`);
+
+    
 });
 
+
+    // Remove local storage if not going back 
+    window.addEventListener('beforeunload', function(e) {
+        e.preventDefault();
+        
+        console.log(document.activeElement);
+        if(document.activeElement.classList.contains('news-link')) return;
+        localStorage.removeItem('windowLoc')
+        // debugger;
+    })

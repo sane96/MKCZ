@@ -70,3 +70,13 @@ socialBarLinks.forEach(icon => icon.addEventListener('mouseout',  function(e) {
 //         if(socialBarArr[socialBarArr.indexOf(e.target) - 1]) socialBarArr[socialBarArr.indexOf(e.target) - 1].style.transform = "scale(1.15)";
 //     }
 // });
+
+
+
+// window.addEventListener('beforeunload', function(e) {
+//     e.preventDefault();
+//     console.log(document.activeElement);
+//     if(document.activeElement.classList.contains('news-link')) return;
+//     localStorage.removeItem('windowLoc')
+//     // debugger;
+// })
