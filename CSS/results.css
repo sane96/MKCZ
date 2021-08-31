@@ -342,9 +342,12 @@
 
 .results-dropdown {
     width: 100%;
-    display: none;
-    box-sizing: border-box;
+    visibility: hidden;
+    display: flex;
+    height: 0;
     flex-direction: column;
+    opacity: 0;
+    transition: all .3s;
 }
 
 .results-dropdown-single {
@@ -357,7 +360,10 @@
 }
 
 .results-dropdown-visible {
-    display: flex;
+    transition: height .5s ease, opacity .3s ease;
+    /* height: 15rem; */
+    visibility: visible;
+    opacity: 1;
 }
 
 .column-drop {

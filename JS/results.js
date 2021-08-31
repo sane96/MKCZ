@@ -45,16 +45,18 @@ selects.forEach(select => select.addEventListener('click', function(e) {
     });
 }))
 
+const resultsDrops = [...document.querySelectorAll('.results-dropdown')];
+console.log(resultsDrops);
+const resultsNum = resultsDrops.map(drop => drop.children.length);
+console.log(resultsNum);
+
 // Opening result tabs
 resultsOutline.forEach(result => result.addEventListener('click', function(e) {
-    
-    if(e.target.parentElement.parentElement.classList.value === 'column column-document') {
-        e.target.parentElement;
-    } else {
-
+    if(e.target.parentElement.parentElement.classList.value === 'column column-document') return e.target.parentElement; 
     this.parentElement.lastElementChild.classList.toggle('results-dropdown-visible');
+    if(!this.parentElement.lastElementChild.style.height) {this.parentElement.lastElementChild.style.height = `${5 * 3}rem`}
+    else this.parentElement.lastElementChild.style.height = '';
     this.firstElementChild.firstElementChild.firstElementChild.classList.toggle('pointer-transformed');
-    }
-}))
+}));
 
 
