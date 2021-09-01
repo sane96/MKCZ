@@ -37,8 +37,9 @@ h1, h2 {
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
+    width: 8px;
+    
+}
   
   /* Track */
   ::-webkit-scrollbar-track {
@@ -48,11 +49,14 @@ h1, h2 {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
+    border-radius: 4px;
   }
+
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgb(150, 5, 5);
+    
   }
 
 /* Heading */
