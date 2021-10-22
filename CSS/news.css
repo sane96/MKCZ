@@ -89,29 +89,39 @@
 .pagination-news {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 80%;
     margin-top: 2rem;
     background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 83%, rgba(255,255,255,0) 100%);
     background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,1) 83%,rgba(255,255,255,0) 100%);
     background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,1) 83%,rgba(255,255,255,0) 100%);
-  }
-  
-  .pagination-news a {
-    color: black;
-    padding: 16px 28px;
+}
+
+.pagination-num {
+padding: 16px 28px;
+color: rgb(150, 5, 5);
+font-weight: 600;
+font-size: 1.3rem;
+transition: background .5s;
+}
+
+.pagination-num.active {
+background-color: rgb(150, 5, 5);
+color: white;
+}
+
+.pagination-num:hover:not(.active),
+.pagination-arrow:hover {
+    background-color: rgb(0, 0, 0, .1)
+}
+
+.pagination-arrow {
+    padding: 12px 18px;
+    border-radius: 50%;
     color: rgb(150, 5, 5);
     font-weight: 600;
     font-size: 1.3rem;
     transition: background .5s;
-  }
-  
-  .pagination-news a.active {
-    background-color: rgb(150, 5, 5);
-    color: white;
-  }
-  
-  .pagination-news a:hover:not(.active) {
-      background-color: rgb(0, 0, 0, .1)
-      
-    }
+    margin: 0 .7rem;
+}
 

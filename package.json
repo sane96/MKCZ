@@ -4,7 +4,6 @@
   "description": "Fencing club",
   "dependencies": {
     "swiper": "^6.6.2"
-    
   },
   "devDependencies": {},
   "scripts": {
