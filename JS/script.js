@@ -2,6 +2,35 @@
 
 const contentElements = [...document.querySelector('.content').children];
 
+const pageId = document.body.id;
+let verificationObj = {
+    home: true,
+    news: true, 
+    results: true, 
+    administration: true,
+    coaches: true,
+    history: true,
+    contact: true, 
+    single: true,
+};
+
+// Make session
+
+if(!sessionStorage.initObj) {
+    sessionStorage.setItem('initObj', JSON.stringify(verificationObj));
+}
+
+
+const verificationId = JSON.parse(sessionStorage.getItem('initObj'))[pageId];
+
+
+
+if(verificationId) {
+    let parsedObj = JSON.parse(sessionStorage.getItem('initObj'));
+
+    parsedObj[pageId] = false;
+    sessionStorage.setItem('initObj', JSON.stringify(parsedObj));
+
 // contentElements.forEach(el => el.style.setProperty ("transition", "transform 1s, opacity 1s"));
 contentElements.forEach(el => el.classList.add('element-hidden'));
 
@@ -49,7 +78,5 @@ contentElements.forEach(function(ele) {
     contentObserver.observe(ele);
        
 });
-
-// Make session
-
+};
 
