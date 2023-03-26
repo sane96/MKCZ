@@ -2,10 +2,6 @@
   "name": "mkcz",
   "version": "1.0.2",
   "description": "Fencing club",
-  "dependencies": {
-    "swiper": "^6.6.2"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
