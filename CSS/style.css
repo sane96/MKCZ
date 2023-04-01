@@ -439,6 +439,7 @@ nav li:hover .icon-nav{
     display: flex;
     flex-direction: column;
     border: 1px solid var(--red);
+    align-items: center;
 }
 
 .competition-table-header {
@@ -451,19 +452,60 @@ nav li:hover .icon-nav{
     color: var(--white-text);
 }
 
-.header-column-name {
+.column {
+    text-align: center;
+    height: 90%;
+    color: var(--red);
+    font-weight: 500;
+}
+
+.column-name {
     padding-left: 50px;
     padding-right: 20px;
     width: 300px;
+    border-right: 1px solid var(--red);
 }
 
 .competition-table-row-container {
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .competition-table-single {
-
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    transition: background .5s;
+    cursor: pointer;
 }
+
+.competition-table-single:hover {
+    background: rgb(220, 220, 220);
+}
+
+.competition-table-single:nth-of-type(2n) .column p::after {
+    background-color: rgb(255, 255, 255);
+}
+
+.competition-table-single:nth-of-type(2n)  {
+    background: rgb(155, 5, 5, .6);
+}
+
+.competition-table-single:nth-of-type(2n) .column,
+.competition-table-single:nth-of-type(2n) .column p {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.competition-table-single:nth-of-type(2n):hover  {
+    background: rgb(155, 5, 5, .8);
+}
+
+
 
 
 .competition-table-pagination {
