@@ -76,7 +76,7 @@
 
 
 /* Results-content */
-.results-container {
+/* .results-container {
     width: 100%;
     height: auto;
     display: flex;
@@ -89,7 +89,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .results-single {
     display: flex;
@@ -152,30 +152,14 @@
     font-weight: 500;
 } */
 
-.column:last-of-type {
-    border: none;
-}
 
 
-.column p {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Merriweather;
-    font-weight: 500;
-    font-size: 1.1;
-}
 
 /* .column-name {
     width: 25%;
 } */
 
-.column.column-name p{
-    justify-content: flex-start;
-    padding-left: .5rem;
-}
+
 
 .column-pointer {
     width: 15%;

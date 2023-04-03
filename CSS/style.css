@@ -104,7 +104,7 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    max-height: 120px;
+    /* max-height: 120px; */
     width: 60%;
 }
 
@@ -401,6 +401,8 @@ nav li:hover .icon-nav{
 /* ############### Content */
 .section {
     width: 70%;
+    max-width: 1500px;
+    min-width: 1100px;
     padding: 2rem 0;
 }
 
@@ -424,25 +426,31 @@ nav li:hover .icon-nav{
 }
 
 
-/* ########## Section Competitions */
-#section-competitions {
+/* ########## Section Results */
+#section-results {
     display: flex;
     height: 90vh;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-/* ##### Competition table */
-.competition-table {
-    width: 100%;
+/* ##### Tables */
+.results-table {
     height: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--red);
-    align-items: center;
+    align-items: center;  
 }
 
-.competition-table-header {
+#competition-table {
+    width: 39%;
+}
+
+#rankings-table {
+    width: 60%;
+}
+
+.results-table-header {
     background: var(--red);
     width: 100%;
     height: 50px;
@@ -450,27 +458,51 @@ nav li:hover .icon-nav{
     justify-content: space-between;
     align-items: center;
     color: var(--white-text);
+    border-radius: 10px 10px 0 0;
+}
+
+.header-name {
+    padding-left: 30px;
 }
 
 .column {
     text-align: center;
     height: 90%;
     color: var(--red);
-    font-weight: 500;
+}
+
+.column p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 .column-name {
     padding-left: 50px;
     padding-right: 20px;
-    width: 300px;
-    border-right: 1px solid var(--red);
+    width: 250px;
+    display: flex;
+    justify-content: start;
 }
 
-.competition-table-row-container {
+
+
+.column-name p {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+.table-row-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.table-row-container .column-name {
+    border-right: 1px solid var(--red);
 }
 
 .competition-table-single {
@@ -516,8 +548,13 @@ nav li:hover .icon-nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100%;
+    height: 50%;
     padding-right: 20px;
+}
+
+.filters-row p,
+.filters-row span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .select-wrapper {
@@ -528,17 +565,19 @@ nav li:hover .icon-nav{
 }
 
 .label {
-    font-size: 20px;
-    margin-right: .5rem;
-    margin-left: 2rem;
+    padding-top: 5px;
+    font-size: 15px;
+    /* font-weight: 500; */
+    margin-right: 5px;
+    margin-left: 10px;
 }
 
 .select {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 30px;
-    width: 170px;
+    height: 25px;
+    width: 110px;
     
 }
 .select-trigger {
@@ -546,17 +585,16 @@ nav li:hover .icon-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    font-size: 1.2rem;
+    padding: 0 5px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--red);
     height: 100%;
     width: 100%;
     background: #ffffff;
     border: 1px solid var(--red);
-    /* border-radius: 5px; */
     cursor: pointer;
-    /* border: 1px solid rgb(155, 5, 5); */
+
 }
 
 .options {
@@ -586,11 +624,11 @@ nav li:hover .icon-nav{
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0 20px;
-    font-size: 1.2rem;
+    padding: 0 5px;
+    font-size:  16px;
     font-weight: 600;
     color: var(--red);
-    height: 2.5rem;
+    height: 32px;
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -604,8 +642,8 @@ nav li:hover .icon-nav{
 }
 
 .pointer-select {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     fill: var(--red);
     right: 0;
     transition: all .3s;
