@@ -241,7 +241,6 @@ nav li > a::before {
     bottom: 0;    
     transition: height .3s ease-in-out;
     z-index: -1;
-    border-radius: 20px 20px 0 0;
 }
 
 nav li:hover > a::before {
@@ -266,7 +265,6 @@ nav li a {
     align-items: center;
     color: var(--red);
     font-size: 1.3rem;
-    padding: .3rem 0;
     width: 100%; 
     border-right: 1px solid var(--red);
     height: 100%;
@@ -301,8 +299,7 @@ nav li:hover .icon-nav{
     z-index: 10;
 }
 
-.dropdown:hover {
-    transform: rotate(90deg);
+nav li .dropdown:hover {
     fill: rgb(255, 255, 255);
 }
 
@@ -320,6 +317,33 @@ nav li:hover .icon-nav{
     opacity: 0;
     transition: opacity .3s; 
 }
+
+.dropdown-filters {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    justify-content: start;
+    align-items: start;
+    top: -13px;
+    right: 0;
+    width: 300px;
+    min-height: 100px;
+    background-color: rgb(245, 245, 245, 0.9);
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s; 
+}
+
+.dropdown-filters-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 
 .dropdown:hover 
 .dropdown-menu {
@@ -443,11 +467,12 @@ nav li:hover .icon-nav{
 }
 
 #competition-table {
-    width: 39%;
+    width: 50%;
+    min-width: 570px;
 }
 
 #rankings-table {
-    width: 60%;
+    width: 500px;
 }
 
 .results-table-header {
@@ -458,7 +483,6 @@ nav li:hover .icon-nav{
     justify-content: space-between;
     align-items: center;
     color: var(--white-text);
-    border-radius: 10px 10px 0 0;
 }
 
 .header-name {
@@ -471,15 +495,19 @@ nav li:hover .icon-nav{
     color: var(--red);
 }
 
-.column p {
+.column p, .column span {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
+.table-row-container .column-name {
+    border-right: 1px solid var(--red);
+}
+
 .column-name {
-    padding-left: 50px;
-    padding-right: 20px;
-    width: 250px;
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 220px;
     display: flex;
     justify-content: start;
 }
@@ -490,9 +518,68 @@ nav li:hover .icon-nav{
     display: flex;
     justify-content: start;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 
+.column-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.invitation-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--red);
+    margin-left: 10px;
+}
+
+
+.rank-table-single {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: var(--white-background);
+}
+
+.rank-table-single .column-rank {
+    border-right: 1px solid var(--red);
+}
+
+.info-label {
+    display: flex;
+    justify-content: start;
+    font-weight: 500;
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+
+.column-rank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-rank {
+    width: 10%;
+}
+
+.info-name {
+    width: 40%;
+}
+
+.info-club {
+    width: 40%;
+}
+
+.info-points {
+    width: 10%;
+}
 
 .table-row-container {
     width: 100%;
@@ -501,8 +588,18 @@ nav li:hover .icon-nav{
     align-items: center;
 }
 
-.table-row-container .column-name {
-    border-right: 1px solid var(--red);
+.rank-table-single:nth-of-type(2n)  {
+    background: rgb(155, 5, 5, .6);
+}
+
+.rank-table-single:nth-of-type(2n) .column,
+.rank-table-single:nth-of-type(2n) .column p {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.rank-table-single .info-points:last-child {
+    border-right: none;
 }
 
 .competition-table-single {
@@ -537,7 +634,10 @@ nav li:hover .icon-nav{
     background: rgb(155, 5, 5, .8);
 }
 
+.info-row {
+    display: flex;
 
+}
 
 
 .competition-table-pagination {
@@ -555,9 +655,31 @@ nav li:hover .icon-nav{
 .icon-filters {
     width: 24px;
     height: 24px;
-    fill: white;
+    fill: var(--white-text);
     cursor: pointer;
+    transition: fill 0.3 ease-in-out;
 }
+
+.icon-filters-active {
+    fill: var(--red);
+}
+
+/* .filter-icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: rgb(245 ,245, 245, 0.9);
+    border-radius: 5px;
+    transition: background 0.3 ease-in-out; 
+}
+
+.filter-icon-btn-active {
+    background: var(--red);
+} */
+
+
 
 .filters-row p,
 .filters-row span {
@@ -569,7 +691,10 @@ nav li:hover .icon-nav{
     user-select: none;
     display: flex;
     align-items: center;
-    
+}
+
+.select-wrapper-rank {
+    margin-top: 20px;
 }
 
 .label {
@@ -602,7 +727,6 @@ nav li:hover .icon-nav{
     background: #ffffff;
     border: 1px solid var(--red);
     cursor: pointer;
-    border-radius: 5px;
 }
 
 .options {
@@ -611,8 +735,6 @@ nav li:hover .icon-nav{
     width: 100%;
     height: auto;
     max-height: 150px;
-    top: 100%;
-    left: 0%;
     border: 1px solid var(--red);
     border-top: 0;
     background: #fff;
@@ -623,6 +745,17 @@ nav li:hover .icon-nav{
     overflow-y:auto;
     
 }
+
+.options-position-competitions {
+    top: 100%;
+    right: 0;
+}
+
+.options-position-ranking {
+    top: 0;
+    right: -100%;
+}
+
 .select.open .options {
     opacity: 1;
     visibility: visible;
@@ -646,7 +779,7 @@ nav li:hover .icon-nav{
 }
 .option.selected {
     color: rgb(255, 255, 255);
-    background-color: var(--red);
+    background: rgb(155, 5, 5, .6);
 }
 
 .pointer-select {

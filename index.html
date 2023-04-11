@@ -483,44 +483,22 @@
                     </div>
 
                     <div class="filters-row">
-                        <div class="select-wrapper">
-                            <p class="label headline"></p>
-                            <div class="select">
-                                <div class="select-trigger">
-                                    <span>Категорије</span>
-                                    <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                        <use xlink:href="#pointer"></use>
-                                    </svg>
-                                </div>
-                                <div class="options">
-                                    <span class="option selected" data-value="0">Све</span>
-                                    <span class="option" data-value="1">Сениори</span>
-                                    <span class="option" data-value="2">Јуниори</span>
-                                    <span class="option" data-value="3">Кадети</span>
-                                    <span class="option" data-value="4">Пионири А</span>
-                                    <span class="option" data-value="4">Пионири Б</span>
+                            <div class="select-wrapper">
+                                <p class="label headline"></p>
+                                <div class="select">
+                                    <div class="select-trigger">
+                                        <span>Сезона</span>
+                                        <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                            <use xlink:href="#pointer"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="options options-position-competitions">
+                                        <span class="option selected" data-value="0">21/22</span>
+                                        <span class="option" data-value="1">20/21</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>  
-                        <div class="select-wrapper">
-                            <p class="label headline"></p>
-                            <div class="select">
-                                <div class="select-trigger">
-                                    <span>Сезона</span>
-                                    <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                        <use xlink:href="#pointer"></use>
-                                    </svg>
-                                </div>
-                                <div class="options">
-                                    <span class="option selected" data-value="0">21/22</span>
-                                    <span class="option" data-value="1">20/21</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <svg class="icon-filters" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"/>
-                        </svg>
+  
                     </div>
                 </div>
                 <div class="table-row-container">
@@ -528,11 +506,26 @@
                         <div class="column column-name">
                             <p>Drzavno prvenstvo</p>
                         </div>
+                        
+                        <div class="column column-info">
+                            <div class="info-row">
+                                <span class="info-label">Датум: </span><p>&nbsp;&nbsp;24.03.2023</p>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Место одржавања: </span><p>&nbsp;&nbsp;Београдски Сајам, Хала 2 </p>               
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Позивно писмо: </span>
+                                <a href="#">
+                                    <svg class="invitation-icon"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 1.29289C9.48043 1.10536 9.73478 1 10 1H18C19.6569 1 21 2.34315 21 4V20C21 21.6569 19.6569 23 18 23H6C4.34315 23 3 21.6569 3 20V8C3 7.73478 3.10536 7.48043 3.29289 7.29289L9.29289 1.29289ZM18 3H11V8C11 8.55228 10.5523 9 10 9H5V20C5 20.5523 5.44772 21 6 21H18C18.5523 21 19 20.5523 19 20V4C19 3.44772 18.5523 3 18 3ZM6.41421 7H9V4.41421L6.41421 7ZM7 13C7 12.4477 7.44772 12 8 12H16C16.5523 12 17 12.4477 17 13C17 13.5523 16.5523 14 16 14H8C7.44772 14 7 13.5523 7 13ZM7 17C7 16.4477 7.44772 16 8 16H16C16.5523 16 17 16.4477 17 17C17 17.5523 16.5523 18 16 18H8C7.44772 18 7 17.5523 7 17Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="competition-table-single">
-                        <div class="column column-name">
-                            <p>Trofej Silnog</p>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="competition-table-pagination">
@@ -546,93 +539,113 @@
                         <h2>Ранг листе</h2>
                     </div>
 
-                    <div class="filters-row">
-                        <div class="select-wrapper">
-                            <p class="label"></p>
-                            <div class="select">
-                                <div class="select-trigger">
-                                    <span>Категорије</span>
-                                    <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                        <use xlink:href="#pointer"></use>
-                                    </svg>
+                    <div class="filters-row dropdown">
+                        <svg class="icon-filters" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"/>
+                        </svg>
+
+                        <div class="dropdown-filters">
+                            <div class="select-wrapper select-wrapper-rank">
+                                <p class="label"></p>
+                                <div class="select">
+                                    <div class="select-trigger">
+                                        <span>Категорије</span>
+                                        <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                            <use xlink:href="#pointer"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="options options-position-ranking ">
+                                        <span class="option selected" data-value="1">Сениори</span>
+                                        <span class="option" data-value="2">Јуниори</span>
+                                        <span class="option" data-value="3">Кадети</span>
+                                        <span class="option" data-value="4">Пионири А</span>
+                                        <span class="option" data-value="4">Пионири Б</span>
+                                    </div>
                                 </div>
-                                <div class="options">
-                                    <span class="option selected" data-value="1">Сениори</span>
-                                    <span class="option" data-value="2">Јуниори</span>
-                                    <span class="option" data-value="3">Кадети</span>
-                                    <span class="option" data-value="4">Пионири А</span>
-                                    <span class="option" data-value="4">Пионири Б</span>
+                            </div>    
+                            <div class="select-wrapper select-wrapper-rank">
+                                <p class="label headline"></p>
+                                <div class="select">
+                                    <div class="select-trigger">
+                                        <span>Pol</span>
+                                        <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                            <use xlink:href="#pointer"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="options options-position-ranking">
+                                        <span class="option selected" data-value="0">Жене</span>
+                                        <span class="option" data-value="1">Мушкарци</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>    
-                        <div class="select-wrapper">
-                            <p class="label headline"></p>
-                            <div class="select">
-                                <div class="select-trigger">
-                                    <span>Pol</span>
-                                    <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                        <use xlink:href="#pointer"></use>
-                                    </svg>
+                            </div>   
+                            <div class="select-wrapper select-wrapper-rank">
+                                <p class="label headline"></p>
+                                <div class="select">
+                                    <div class="select-trigger">
+                                        <span>Оружије</span>
+                                        <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                            <use xlink:href="#pointer"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="options options-position-ranking">
+                                        <span class="option selected" data-value="0">Мач</span>
+                                        <span class="option" data-value="1">Флорет</span>
+                                        <span class="option" data-value="1">Сабља</span>
+                                    </div>
                                 </div>
-                                <div class="options">
-                                    <span class="option selected" data-value="0">Жене</span>
-                                    <span class="option" data-value="1">Мушкарци</span>
-                                </div>
-                            </div>
-                        </div>   
-                        <div class="select-wrapper">
-                            <p class="label headline"></p>
-                            <div class="select">
-                                <div class="select-trigger">
-                                    <span>Оружије</span>
-                                    <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                        <use xlink:href="#pointer"></use>
-                                    </svg>
-                                </div>
-                                <div class="options">
-                                    <span class="option selected" data-value="0">Мач</span>
-                                    <span class="option" data-value="1">Флорет</span>
-                                    <span class="option" data-value="1">Сабља</span>
-                                </div>
-                            </div>
-                        </div>    
-                        <div class="select-wrapper">
-                            <p class="label"></p>
-                            <div class="select">
-                                <div class="select-trigger">
-                                    <span>Сезона</span>
-                                    <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                        <use xlink:href="#pointer"></use>
-                                    </svg>
-                                </div>
-                                <div class="options">
-                                    <span class="option selected" data-value="0">21/22</span>
-                                    <span class="option" data-value="1">20/21</span>
+                            </div>    
+                            <div class="select-wrapper select-wrapper-rank">
+                                <p class="label"></p>
+                                <div class="select">
+                                    <div class="select-trigger">
+                                        <span>Сезона</span>
+                                        <svg class="pointer-select" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+                                            <use xlink:href="#pointer"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="options options-position-ranking">
+                                        <span class="option selected" data-value="0">21/22</span>
+                                        <span class="option" data-value="1">20/21</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-
-                        <svg class="icon-filters" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"/>
-                        </svg>
-
+                     
 
                     </div>
                 </div>
                 <div class="table-row-container">
-                    <div class="competition-table-single">
-                        <div class="column column-name">
-                            <p>Drzavno prvenstvo</p>
+                    <div class="rank-table-single">
+                        <div class="column column-rank info-rank">
+                            <p>1</p>
+                        </div>
+                        <div class="column column-rank info-name">
+                            <p>Данило Сантрач</p>
+                        </div>
+                        <div class="column column-rank info-club">
+                            <p>МК Железничар</p>
+                        </div>
+                        <div class="column column-rank info-points">
+                            <p>120</p>
                         </div>
                     </div>
-                    <div class="competition-table-single">
-                        <div class="column column-name">
-                            <p>Trofej Silnog</p>
+                    <div class="rank-table-single">
+                        <div class="column column-rank info-rank">
+                            <p>2</p>
+                        </div>
+                        <div class="column column-rank info-name">
+                            <p>Данило Nikolic</p>
+                        </div>
+                        <div class="column column-rank info-club">
+                            <p>МК Железничар</p>
+                        </div>
+                        <div class="column column-rank info-points">
+                            <p>120</p>
                         </div>
                     </div>
                 </div>
-                <div class="competition-table-pagination">
+                <div class="rank-table-pagination">
 
                 </div>
             </div>
@@ -640,6 +653,38 @@
             
         <section class="section" id="section-news">
             
+
+            <div class="news-single">
+                <a class="news-link" href="#"></a>
+                    <div class="news-header">
+                        <p class="news-date"><time>25.05.2021</time></p>
+                        <h3 class="news-headline">Прва вест</h3>
+                    </div>   
+                    <div class="news-outline">
+                        <div class="news-img-container">
+                            <img class="img" src="/img/stadion.jpg" alt=""> 
+                        </div>
+                        <div class="news-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa accusamus veritatis fugit, quasi cumque. Ea a ipsam commodi dolores quis praesentium fugit voluptates, dignissimos harum voluptate officiis, ex doloremque eius iure?</p>
+                        </div>
+                    </div>                       
+            </div>
+
+            <div class="news-single">
+                <a class="news-link" href="#"></a>
+                    <div class="news-header">
+                        <p class="news-date"><time>25.05.2021</time></p>
+                        <h3 class="news-headline">Прва вест</h3>
+                    </div>   
+                    <div class="news-outline">
+                        <div class="news-img-container">
+                            <img class="img" src="/img/stadion.jpg" alt=""> 
+                        </div>
+                        <div class="news-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa accusamus veritatis fugit, quasi cumque. Ea a ipsam commodi dolores quis praesentium fugit voluptates, dignissimos harum voluptate officiis, ex doloremque eius iure?</p>
+                        </div>
+                    </div>                       
+            </div>
 
             <div class="news-single">
                 <a class="news-link" href="#"></a>
