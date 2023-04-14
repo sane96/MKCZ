@@ -555,7 +555,7 @@ nav li .dropdown:hover {
     display: flex;
     justify-content: start;
     font-weight: 500;
-    color: rgb(0, 0, 0, 0.8);
+    color: rgb(35, 35, 35);
     font-size: 14px;
 }
 
@@ -563,6 +563,7 @@ nav li .dropdown:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
 }
 
 .info-rank {

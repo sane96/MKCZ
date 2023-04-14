@@ -1,10 +1,14 @@
 'use strict';
 
 const contentElements = [...document.querySelector('.container-content').children];
-
 const filterIcons = [...document.querySelectorAll('.icon-filters')];
-
 const dropdownFilters = [...document.querySelectorAll('.dropdown-filters')];
+const sectionLanding = document.getElementById('section-landing');
+const sectionHistory = document.getElementById('section-history');
+const sectionResults = document.getElementById('section-results');
+const sectionNews = document.getElementById('section-news');
+const sectionContact = document.getElementById('section-contact');
+const navbar = document.getElementById('navbar');
 
 // const pageId = document.body.id;
 // let verificationObj = {
@@ -34,6 +38,16 @@ const dropdownFilters = [...document.querySelectorAll('.dropdown-filters')];
 
 //     parsedObj[pageId] = false;
 //     sessionStorage.setItem('initObj', JSON.stringify(parsedObj));
+
+// Smooth scrolling
+
+navbar.addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log(e.target);
+
+    sectionLanding.scrollIntoView({ behavior: 'smooth' });
+})
+
 
 contentElements.forEach(el => el.style.setProperty ("transition", "transform 1s, opacity 1s"));
 contentElements.forEach(el => el.classList.add('element-hidden'));
