@@ -28,7 +28,7 @@
     <header class="header"> 
         <div class="container-header-content"> 
             <div class="header-logo">
-                <img class="logo" src="img/grb.png" alt="logo.png">
+                <a href="index.html"><img class="logo" src="img/grb.png" alt="logo.png"></a>
                 <p class="headline headline-red">ЦРВЕНА</p>
                 <p class="headline headline-white">ЗВЕЗДА</p>
             </div>   
@@ -77,6 +77,7 @@
 
     <div class="container-content">
         <div class="content-carousel">
+            
             <section class="section" id="section-landing">
                 <div class="swiper-container">
 
@@ -90,27 +91,11 @@
             <section class="section" id="section-news">
                 
 
-
-                <a class="news-single" href="#">
-                    <div class="news-header">
-                        <p class="news-date">25.05.2021</p>
-                        <p class="news-headline">Прва вест</>
-                    </div>   
-                    <div class="news-outline">
-                        <div class="news-img-container">
-                            <img class="img" src="/img/stadion.jpg" alt=""> 
-                        </div>
-                        <div class="news-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
-                        </div>
-                    </div>                       
-                </a>
-
-                <div class="news-single">
-                    <a class="news-link" href="#"></a>
+                <div class="news-container">
+                    <div class="news-single" href="#">
                         <div class="news-header">
-                            <p class="news-date"><time>25.05.2021</time></p>
-                            <h3 class="news-headline">Прва вест</h3>
+                            <p class="news-date">25.05.2021</p>
+                            <p class="news-headline">Прва вест</>
                         </div>   
                         <div class="news-outline">
                             <div class="news-img-container">
@@ -120,24 +105,40 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
                             </div>
                         </div>                       
+                    </div>
+
+                    <div class="news-single">
+                        <a class="news-link" href="#"></a>
+                            <div class="news-header">
+                                <p class="news-date"><time>25.05.2021</time></p>
+                                <h3 class="news-headline">Прва вест</h3>
+                            </div>   
+                            <div class="news-outline">
+                                <div class="news-img-container">
+                                    <img class="img" src="/img/stadion.jpg" alt=""> 
+                                </div>
+                                <div class="news-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
+                                </div>
+                            </div>                       
+                    </div>
+
+                    <div class="news-single">
+                        <a class="news-link" href="#"></a>
+                            <div class="news-header">
+                                <p class="news-date"><time>25.05.2021</time></p>
+                                <h3 class="news-headline">Прва вест</h3>
+                            </div>   
+                            <div class="news-outline">
+                                <div class="news-img-container">
+                                    <img class="img" src="/img/stadion.jpg" alt=""> 
+                                </div>
+                                <div class="news-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
+                                </div>
+                            </div>                       
+                    </div>                               
                 </div>
-
-                <div class="news-single">
-                    <a class="news-link" href="#"></a>
-                        <div class="news-header">
-                            <p class="news-date"><time>25.05.2021</time></p>
-                            <h3 class="news-headline">Прва вест</h3>
-                        </div>   
-                        <div class="news-outline">
-                            <div class="news-img-container">
-                                <img class="img" src="/img/stadion.jpg" alt=""> 
-                            </div>
-                            <div class="news-text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
-                            </div>
-                        </div>                       
-                </div>                               
-
 
             </section>
 
@@ -283,9 +284,6 @@
             
                         <div class="results-table results-table-rankings" id="rankings-table">
                             <div class="filters-row dropdown">
-                                <!-- <svg class="icon-filters" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"/>
-                                </svg> -->
                                 <p class="filters-btn">Филтери</p>
         
                                 <div class="dropdown-filters">
@@ -396,70 +394,37 @@
             </section>
             
             <section class="section" id="section-history">
-
+                <div class="history-content">
+                    <p class="history-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facere laborum voluptatem dolor, quisquam repellat recusandae. Fugiat, minus, quasi veritatis rerum culpa quisquam aliquam voluptatibus, odit magnam consequuntur explicabo! Incidunt perspiciatis maiores quas veniam deleniti, iste ipsa tenetur quia natus voluptatibus labore soluta nihil, facere sapiente quos eveniet illum aspernatur illo reprehenderit possimus laboriosam mollitia. Magnam iusto aliquid aut nobis recusandae ab quis quod modi autem ducimus, earum incidunt, facere officia. Alias soluta repudiandae sit neque, eos aut ipsum doloribus dolorem numquam excepturi veritatis praesentium magni, debitis corrupti temporibus. Nostrum minus ipsum soluta ratione optio labore a deserunt debitis voluptate deleniti iusto, quisquam provident ipsa facilis in perspiciatis nemo. Quo reprehenderit neque qui odit alias sapiente provident ut delectus nobis sint corporis totam praesentium fugit accusantium vero obcaecati assumenda rerum officia illo, ab eos minima deleniti, libero molestias. Quos esse voluptates ipsam expedita possimus non architecto quidem perferendis dolores tempora molestias dolore nemo veritatis, hic temporibus. Voluptatibus maiores totam, atque nam nemo est? Sed quibusdam aliquam voluptatem consectetur doloremque quia repellendus exercitationem ullam eligendi, voluptas quas aut provident reprehenderit est mollitia suscipit obcaecati fuga illo ea. Reiciendis eum inventore dolore deserunt! Eaque repudiandae maiores labore laboriosam excepturi temporibus quaerat eum vel nesciunt cumque quo, molestias maxime magnam nostrum praesentium. Error voluptatibus cumque quibusdam fuga ratione odit eligendi molestias quas dignissimos omnis culpa dolore laborum natus facilis id magnam maiores quaerat, repellendus ipsa debitis aliquid at esse numquam? Saepe reiciendis dolorum voluptatum. Maiores laborum facere sed quibusdam explicabo, aliquid adipisci a ratione assumenda, ea deleniti saepe ipsam! Repudiandae, obcaecati porro cumque fugiat commodi amet deserunt optio numquam omnis praesentium aut fugit rem delectus ratione ut molestias magni. Qui, ratione voluptates earum corrupti id dolorem dolor debitis quisquam neque expedita error rem molestiae perspiciatis eligendi dolore labore recusandae voluptate et. Necessitatibus ipsam dicta adipisci sapiente sunt veritatis, vel assumenda, deserunt nobis quibusdam doloremque? Molestias tenetur facilis corrupti quaerat minima possimus! Facere corrupti maxime quibusdam aperiam! Consequatur animi amet quam error iusto dolor reiciendis repellat non possimus tempore, at explicabo, tenetur ex asperiores dolore alias. Odio unde fuga, pariatur exercitationem quidem a, perspiciatis itaque optio laudantium nobis, rem iusto facilis nostrum maiores at! Quisquam quaerat recusandae amet eaque adipisci nemo aut porro corrupti dolorem totam officia incidunt repudiandae eligendi molestias delectus praesentium, sunt rem earum, optio, itaque accusamus temporibus? Soluta recusandae porro quas, expedita nemo rerum tempore provident placeat aliquid odio, maiores quae! Consequatur, atque nemo inventore, quam ea adipisci deserunt, qui numquam blanditiis odit repudiandae natus quae quidem suscipit sit. Cupiditate fuga porro eveniet temporibus nulla tempore asperiores minus quis unde. Quidem soluta inventore aliquam nobis beatae quas natus animi vitae, necessitatibus velit, expedita, repudiandae dicta temporibus? Corporis quos rerum debitis impedit voluptatibus quae natus, itaque aut commodi ratione, perferendis quo reprehenderit voluptas magni eaque. Quisquam soluta suscipit ipsam incidunt aliquam? Voluptates possimus asperiores cum, laborum ipsum, inventore facilis provident tempore, sint quisquam aspernatur libero ducimus eligendi molestiae hic cumque accusantium iure? Molestiae nulla repellendus odio rem consectetur? Facere hic, illum dolorum dolor animi unde obcaecati harum a sed, nesciunt amet quas commodi ullam at cumque voluptatem sequi totam explicabo adipisci dolorem soluta laboriosam? Sint suscipit nobis quae! Iusto quos atque quia molestias. Aspernatur reprehenderit ad impedit similique quidem ipsam beatae? Debitis quis deleniti repellendus, necessitatibus reprehenderit at incidunt facere nemo ex dicta iusto impedit dolorum repudiandae voluptas aliquam inventore tenetur quod sequi unde quam repellat. Nulla impedit praesentium eius atque expedita vitae ratione perferendis officia ad ipsa hic mollitia porro tenetur deleniti similique, suscipit id nesciunt quos? Modi animi distinctio iusto natus voluptates autem saepe aspernatur quisquam dignissimos deleniti nemo ipsa doloremque consequatur qui officiis explicabo suscipit iste, repudiandae accusantium doloribus possimus similique! Odio, maxime non harum temporibus sit voluptatem facere laboriosam nobis repellat aliquam itaque repellendus eveniet nemo voluptates mollitia expedita. Ipsam perferendis molestiae aspernatur quidem quia ab accusamus dolor enim corporis saepe cumque cupiditate quis consequuntur, quo reprehenderit. Sapiente quibusdam deserunt, expedita nulla obcaecati nostrum consectetur repellendus voluptatem! Voluptatem consequuntur labore doloremque! Et quas, fuga quo recusandae itaque quidem, delectus incidunt voluptas error sapiente quod earum modi tenetur ipsa quia id. Est, culpa quasi! Id fugiat accusamus aspernatur! Accusantium deserunt, quas voluptatem inventore officia cumque ex laudantium libero provident velit sunt fugiat deleniti eius recusandae quae quaerat corrupti rerum cupiditate omnis debitis natus. Necessitatibus voluptatem est nobis ullam sed dignissimos sequi consequuntur libero adipisci! Reiciendis impedit in quibusdam numquam alias, repellat atque aperiam vel qui aliquam mollitia voluptatem et illo tempore id? Nemo, quod aliquid nostrum quisquam, ab dignissimos officiis explicabo eum id cum laboriosam aut? Quia, quam ea nam eum voluptatem ullam repudiandae pariatur magnam facilis reiciendis eligendi impedit architecto doloribus animi mollitia error maxime. Odit deserunt aperiam consectetur magnam commodi eveniet quo laudantium reprehenderit, et laboriosam consequatur incidunt. Cum sunt, omnis minus illo magnam voluptatem architecto iste reiciendis explicabo temporibus amet, odit fugit voluptate. Aut architecto quasi illum cum reiciendis. Nobis eligendi, exercitationem aperiam enim porro omnis tempore est nesciunt, minus velit temporibus harum officia sunt, voluptatibus ad cupiditate deleniti voluptatum vero sequi natus voluptate. Quos, quas consequuntur! Veritatis sunt aliquid quibusdam, quaerat suscipit sed, nobis quo recusandae voluptate nihil dolor a deserunt laboriosam corporis blanditiis ipsum obcaecati ea! Odit cum repellat, earum hic numquam in nemo aliquid consequuntur veniam nostrum porro ipsum quo vitae magnam placeat esse praesentium amet ut. Tempore dolor facere id, nam neque magnam ratione numquam quas! Quam dolorem enim voluptas amet iure doloribus, quibusdam dignissimos, aspernatur consectetur quas a labore voluptatem, fuga debitis optio maiores? Omnis, eos deleniti ex doloribus amet, sunt quis sapiente reiciendis autem explicabo eligendi, aliquam corrupti? Tempore officiis nemo a et, aperiam quaerat ad inventore dolorum ab consectetur, nulla amet debitis laborum? Eligendi animi ut, iure sunt eos impedit? Delectus facilis voluptas, rem esse a rerum quia facere eius. Distinctio iure inventore totam, tenetur accusamus quas voluptatibus voluptates, deserunt aspernatur nesciunt nostrum corrupti expedita asperiores quia. Quam nisi sit minus voluptas officiis distinctio corrupti est, inventore, tempore veritatis sed omnis, atque nesciunt libero. Accusamus, animi fugit. Blanditiis ipsa, odio, nobis ea asperiores eveniet rerum ad repellendus nam dolorem molestiae nisi earum repudiandae id laudantium sunt nemo inventore eos facere. Consequatur vel unde nobis numquam deserunt tempore nulla dolores officia, ipsam quaerat fugit magnam odit nam quasi saepe ratione debitis, quam accusamus dicta, nostrum soluta beatae rerum corrupti culpa! Numquam magni maiores autem corporis voluptatem reiciendis nisi omnis voluptatibus. Quam quae id molestiae vitae, nobis aliquid fugiat porro ex earum debitis quis accusamus rerum adipisci culpa sed eaque sapiente harum placeat, corporis ad, omnis distinctio sit voluptatem! Illum provident animi nisi itaque optio magni aspernatur omnis eaque dolor, ratione nihil a corrupti dicta facere in voluptatum sit veniam velit obcaecati. Dignissimos totam porro nisi, cumque, aut incidunt placeat perferendis est aperiam doloremque obcaecati blanditiis illum quo nam harum sint alias sunt qui at laborum molestiae dolor temporibus! Reiciendis nemo laborum, commodi incidunt beatae error eum, molestiae quo vitae iusto illum dolorem at natus ullam neque consectetur repellat. Natus repellat dolores, beatae laboriosam optio, molestiae dolorum eveniet veritatis at illum modi non cumque illo expedita nulla! Et maiores dolorem corporis deserunt voluptatibus accusantium ab nam. Necessitatibus porro temporibus cum, totam rem obcaecati enim voluptatibus ratione laudantium laboriosam id iste possimus odio repellendus recusandae ex ut odit fugiat corporis error. Corrupti atque adipisci sequi fugiat culpa! Qui aliquam dolores expedita officia laborum, reiciendis nesciunt corrupti, dolore provident quasi tempore sunt repellat hic. Distinctio, porro voluptatum. Esse earum adipisci consectetur quas tempora modi, est nemo molestias velit, eius expedita iure corrupti aspernatur quam. Cumque ullam enim dignissimos, expedita dicta iure aperiam consectetur possimus, beatae veniam dolor ipsum. Corrupti fuga maiores cum impedit quos odit illum praesentium laudantium ipsam recusandae ex, maxime ratione suscipit animi asperiores eum esse? Illo totam repellat deserunt enim odit ut recusandae eos. Nostrum asperiores in sint adipisci provident sunt sequi, ducimus harum, blanditiis minima eum reiciendis aperiam consequatur, inventore unde dolorum eligendi architecto. Ex mollitia repellat, sit sequi qui vitae minus porro quibusdam, placeat quas in, hic veniam facere ducimus quod ipsum inventore illum. Suscipit laboriosam nisi delectus quae natus itaque? Perferendis ut porro ea animi pariatur reprehenderit inventore amet, velit repellat vero dignissimos ad, doloribus possimus dolorem, minima facere et debitis corrupti? Consectetur, qui. Commodi nobis iure corrupti. Quos illum tenetur natus aperiam illo eveniet consequuntur exercitationem numquam impedit, porro possimus fugit soluta aliquam animi nihil suscipit quam quae voluptatum similique cumque ipsa? Tempore blanditiis illo animi quod suscipit repudiandae ratione, nam vitae deleniti laborum, rerum enim alias aperiam voluptates quibusdam commodi molestias ullam doloribus sint dignissimos. Suscipit, culpa quos? Delectus officia deleniti aliquid numquam provident ducimus corporis voluptates doloremque adipisci, debitis asperiores id consequatur, laborum harum non odio obcaecati veritatis animi nobis, magnam quis in iste quidem accusamus. Suscipit maxime dolore enim optio expedita dolorum, id eos necessitatibus minima nemo, fuga at ab molestiae dolorem recusandae facilis omnis pariatur consequatur et accusamus. Esse fuga suscipit quaerat, nulla tempora saepe assumenda illo error deserunt id consectetur dolore aliquid neque commodi corrupti distinctio ea. Ipsam aspernatur sunt alias?</p>
+                </div>
             </section>
 
 
             <section class="section" id="section-contact">
-                
+
+                    <p>Контакт телефон: <a href="">+38163211036</a> Зоран Тимић</p>
+                    <p>МК Црвена звезда тренира локацији:</p>
+                    <div class="location">
+                        <div class="location-info">
+                            <p>Сала у спортском друштву "Црвена звезда"</p>
+                            <p>За локацију сале кликните <a href="https://www.google.com/maps/place/%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D1%81%D0%BA%D0%BE+%D0%B4%D1%80%D1%83%D1%88%D1%82%D0%B2%D0%BE+%E2%80%9E%D0%A6%D1%80%D0%B2%D0%B5%D0%BD%D0%B0+%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0%E2%80%9D/@44.7847,20.4631188,18.5z/data=!4m5!3m4!1s0x475a706a9ca4075b:0x25ae5a3c1a3afa59!8m2!3d44.7851309!4d20.4631922" target="_blank">овде</a></p>
+                        </div>    
+                        <div class="location-img">
+                            <img src="" alt="" class="img">
+                        </div>
+                    </div>
+ 
             </section>
         </div>
 
     </div>
 
     <footer class="footer">
-        <div class="footer-body">
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <div class="footer-contact-headline">
-                        <h3>Контакт клуба</h3>
-                    </div>
-                    <div class="footer-contact-info">
-                        <div class="footer-contact-left">                   
-                            <p><svg class="icon-footer" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                <use xlink:href="#email-svg"></use>
-                            </svg> <a href="mailto:redstarfencingclub@gmail.com">redstarfencingclub@gmail.com</a></p>
-                            <p><svg class="icon-footer" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                <use xlink:href="#call-svg"></use>
-                            </svg> <a href="tel:+38163211036">+38163211036</a>  &nbsp;&nbsp; Зоран Тимић</p>
-                        </div>  
-                        <hr class="footer-hr">  
-                        <div class="footer-contact-right">
-                            <p>За више информација о </p>
-                            <p>тренинзима кликните <a href="contact.html">овде</a></p>
-                        </div>    
-                    </div>
-                    
-                </div>
-                <div class="footer-social">
-                    <p>Прати нас на</p>
-                    <div class="icons-social-footer">
-                        <a class="icon-social-footer" target="_blank" href="https://www.facebook.com/macevanjebg">
-                            <svg  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a>
-                        <a class="icon-social-footer" target="_blank" href="https://www.instagram.com/mkcrvenazvezda/?hl=en">
-                            <svg  viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                        </a>
-                    </div>    
-                </div>
-            </div>
-            <img src="img/grb.png" class= "crest-footer" alt="">
-        </div>
-        <div class="terms-conditions">
-            <p>&copy; 2021.Мачевалачки клуб Црвена звезда.Сва права зарджана</p>
-            <p>Created by <a href="#">Danilo Santrač</a>.Designed by <a href="#">Luka Stamenić</a></p>
-        </div>
+        <p class="terms-conditions">&copy; 2023.Мачевалачки клуб Црвена звезда.Сва права зарджана</p>
     </footer>
 
     <svg display="none">
         <defs>
-            <g id="contact">
-                <path xmlns="http://www.w3.org/2000/svg" d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z"/>
-            </g>
             <g id="facebook">
                 <path xmlns="http://www.w3.org/2000/svg" d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/>
             </g>

@@ -100,6 +100,18 @@ for (const option of document.querySelectorAll(".option")) {
 };
 
 
+// Change active class for pagination and add buffer for more paginations
+
+// arrowForward.addEventListener('click', function(e){
+//     paginationBtns.map((el,i) => {
+//        if(el.classList.contains('active')) {
+//            paginationBtns[i + 1].classList.add('active');
+//            el.classList.remove('active');
+//        }
+//     })
+
+// })
+
 
 // // Hide and reveal elements
 // contentElements.forEach(el => el.style.setProperty ("transition", "transform 1s, opacity 1s"));
