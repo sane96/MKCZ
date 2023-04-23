@@ -264,7 +264,6 @@ li:hover .btn-nav {
     height: calc(100vh - 25px);
     background: rgb(230, 230, 230);
     position: relative;
-    /* padding-top: 60px; */
 }
 
 .content-carousel  {
@@ -296,7 +295,7 @@ li:hover .btn-nav {
 }
 
 .swiper-container {
-    width: 80%;
+    width: 50%;
 }
 
 
@@ -909,7 +908,7 @@ li:hover .btn-nav {
     padding: 0 100px 0 100px;
     margin-top: 30px;
     height: 90%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .history-text {
