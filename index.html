@@ -11,15 +11,8 @@
     <link rel="mask-icon" href="favicon-resources/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>МК Црвена звезда | Naslovna</title>
-    <link rel="stylesheet" href="CSS/swiper.css">
+    <title>МК Црвена звезда</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/home.css">
-    <link rel="stylesheet" href="node_modules/swiper/swiper.min.css">
-    <link rel="stylesheet" href="node_modules/swiper/components/pagination/pagination.min.css">
-    <script defer type="module" src="node_modules/swiper/swiper-bundle.js"></script>
-    <script defer type="module" src="JS/swiper.js"></script>
-    <script defer src="JS/results.js"></script>
     <script defer src="JS/script.js"></script>
      
 </head>
@@ -28,7 +21,7 @@
     <header class="header"> 
         <div class="container-header-content"> 
             <div class="header-logo">
-                <a href="index.html"><img class="logo" src="img/grb.png" alt="logo.png"></a>
+                <a href="index.html"><img class="logo" src="img/grb.svg" alt="logo.png"></a>
                 <p class="headline headline-red">ЦРВЕНА</p>
                 <p class="headline headline-white">ЗВЕЗДА</p>
             </div>   
@@ -80,11 +73,21 @@
             
             <section class="section" id="section-landing">
                 <div class="swiper-container">
+                    <div class="swiper-carousel">
+                        <div class="swiper-slide"><img src="img/slajder/img-slider-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/slajder/img-slider-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/slajder/img-slider-3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/slajder/img-slider-4.jpg" alt=""></div>
 
-                    <div class="swiper-slide"><img src="img/img-slider-3.jpg" alt=""></div>
+                    </div>
 
 
                 </div>  
+
+                <div class="landing-quote">
+                    <p class="landing-quote-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, porro."</p>
+                    <p class="landing-quote-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iusto delectus voluptas nam earum vitae, maxime magni iure perspiciatis tempore."</p>
+                </div>
             </section>
 
 
@@ -92,10 +95,10 @@
                 
 
                 <div class="news-container">
-                    <div class="news-single" href="#">
+                    <a href="#" class="news-single">
                         <div class="news-header">
-                            <p class="news-date">25.05.2021</p>
-                            <p class="news-headline">Прва вест</>
+                            <p class="news-date"><time>25.05.2021</time></p>
+                            <h3 class="news-headline">Прва вест</h3>
                         </div>   
                         <div class="news-outline">
                             <div class="news-img-container">
@@ -105,39 +108,37 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
                             </div>
                         </div>                       
-                    </div>
+                    </a>
 
-                    <div class="news-single">
-                        <a class="news-link" href="#"></a>
-                            <div class="news-header">
-                                <p class="news-date"><time>25.05.2021</time></p>
-                                <h3 class="news-headline">Прва вест</h3>
-                            </div>   
-                            <div class="news-outline">
-                                <div class="news-img-container">
-                                    <img class="img" src="/img/stadion.jpg" alt=""> 
-                                </div>
-                                <div class="news-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
-                                </div>
-                            </div>                       
-                    </div>
+                    <a href="#" class="news-single">
+                        <div class="news-header">
+                            <p class="news-date"><time>25.05.2021</time></p>
+                            <h3 class="news-headline">Прва вест</h3>
+                        </div>   
+                        <div class="news-outline">
+                            <div class="news-img-container">
+                                <img class="img" src="/img/stadion.jpg" alt=""> 
+                            </div>
+                            <div class="news-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
+                            </div>
+                        </div>                       
+                    </a>
 
-                    <div class="news-single">
-                        <a class="news-link" href="#"></a>
-                            <div class="news-header">
-                                <p class="news-date"><time>25.05.2021</time></p>
-                                <h3 class="news-headline">Прва вест</h3>
-                            </div>   
-                            <div class="news-outline">
-                                <div class="news-img-container">
-                                    <img class="img" src="/img/stadion.jpg" alt=""> 
-                                </div>
-                                <div class="news-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
-                                </div>
-                            </div>                       
-                    </div>                               
+                    <a href="#" class="news-single">
+                        <div class="news-header">
+                            <p class="news-date"><time>25.05.2021</time></p>
+                            <h3 class="news-headline">Прва вест</h3>
+                        </div>   
+                        <div class="news-outline">
+                            <div class="news-img-container">
+                                <img class="img" src="/img/stadion.jpg" alt=""> 
+                            </div>
+                            <div class="news-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure ab voluptates. Dolore reprehenderit et nemo odio sed, enim impedit rerum nisi consectetur in! Vero dolorem quaerat ipsa </p>
+                            </div>
+                        </div>                       
+                    </a>                              
                 </div>
 
             </section>
@@ -177,22 +178,22 @@
                                 <div class="competition-table-single">
                                     <div class="competition-table-outline">
                                         <div class="column column-name">
-                                            <p>Drzavno prvenstvo</p>
+                                            <p class="info-input">Drzavno prvenstvo</p>
                                         </div>
                                         
                                         <div class="column column-info">
                                                 <div class="info-row">
-                                                    <span class="info-label">Датум: &nbsp;&nbsp;</span><p>24.03.2023</p>
+                                                    <span class="info-label">Датум: &nbsp;&nbsp;</span><p class="info-input">24.03.2023</p>
                                                 </div>
                                                 <div class="info-row">
-                                                    <span class="info-label">Место одржавања: &nbsp;&nbsp;</span><p>Београдски Сајам, Хала 2 </p>               
+                                                    <span class="info-label">Место одржавања: &nbsp;&nbsp;</span><p class="info-input">Београдски Сајам, Хала 2 </p>               
                                                 </div>
                                         </div>
                                     </div>
                                     <div class="competition-table-dropdown">
-                                        <div class="column-info">
+                                        <div class="column-info-dropdown">
                                             <div class="info-row">
-                                                <span class="info-label">Позивно писмо: </span>&nbsp;&nbsp;<a href="#">Писмо</a>
+                                                <span class="info-label">Позивно писмо: </span>&nbsp;&nbsp;<a class="results-link info-input" href="#">Писмо</a>
                                             </div>
                                             <div class="info-row">
                                                 <span class="info-label">Екипно мушкарци: </span>&nbsp;&nbsp;
@@ -201,9 +202,9 @@
                                                 <span class="info-label">Екипно жене: </span>&nbsp;&nbsp;
                                             </div>
                                         </div>
-                                        <div class="column-info">
+                                        <div class="column-info-dropdown">
                                             <div class="info-row">
-                                                <span class="info-label">Сениори: <span>&nbsp;&nbsp;<a href="#"><a href="#">ЖМ&nbsp;</a>              
+                                                <span class="info-label">Сениори: <span>&nbsp;&nbsp;<a class="results-link info-input" href="#">ММ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>              
                                             </div>
                                             <div class="info-row">
                                                 <span class="info-label">Јуниори: </span>&nbsp;&nbsp;             
@@ -212,7 +213,7 @@
                                                 <span class="info-label">Кадети: </span>&nbsp;&nbsp;             
                                             </div>
                                         </div>
-                                        <div class="column-info">
+                                        <div class="column-info-dropdown">
                                             <div class="info-row">
                                                 <span class="info-label">Пионири А: </span>&nbsp;&nbsp;             
                                             </div>
@@ -225,36 +226,37 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="competition-table-single">
                                     <div class="competition-table-outline">
                                         <div class="column column-name">
-                                            <p>Drzavno prvenstvo</p>
+                                            <p class="info-input">Drzavno prvenstvo</p>
                                         </div>
                                         
                                         <div class="column column-info">
                                                 <div class="info-row">
-                                                    <span class="info-label">Датум: &nbsp;&nbsp;</span><p>24.03.2023</p>
+                                                    <span class="info-label">Датум: &nbsp;&nbsp;</span><p class="info-input">24.03.2023</p>
                                                 </div>
                                                 <div class="info-row">
-                                                    <span class="info-label">Место одржавања: &nbsp;&nbsp;</span><p>Београдски Сајам, Хала 2 </p>               
+                                                    <span class="info-label">Место одржавања: &nbsp;&nbsp;</span><p class="info-input">Београдски Сајам, Хала 2 </p>               
                                                 </div>
                                         </div>
                                     </div>
                                     <div class="competition-table-dropdown">
-                                        <div class="column-info">
+                                        <div class="column-info-dropdown">
                                             <div class="info-row">
-                                                <span class="info-label">Позивно писмо: </span>&nbsp;&nbsp;<a href="#">Писмо</a>
+                                                <span class="info-label">Позивно писмо: </span>&nbsp;&nbsp;<a class="results-link info-input" href="#">Писмо</a>
                                             </div>
                                             <div class="info-row">
-                                                <span class="info-label">Екипно мушкарци: </span>&nbsp;&nbsp;
+                                                <span class="info-label">Екипно мушкарци: </span>&nbsp;&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;
                                             </div>
                                             <div class="info-row">
                                                 <span class="info-label">Екипно жене: </span>&nbsp;&nbsp;
                                             </div>
                                         </div>
-                                        <div class="column-info">
+                                        <div class="column-info-dropdown">
                                             <div class="info-row">
-                                                <span class="info-label">Сениори: <span>&nbsp;&nbsp;<a href="#"><a href="#">ЖМ&nbsp;</a>              
+                                                <span class="info-label">Сениори: <span>&nbsp;&nbsp;<a class="results-link info-input" href="#">ММ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>              
                                             </div>
                                             <div class="info-row">
                                                 <span class="info-label">Јуниори: </span>&nbsp;&nbsp;             
@@ -263,9 +265,9 @@
                                                 <span class="info-label">Кадети: </span>&nbsp;&nbsp;             
                                             </div>
                                         </div>
-                                        <div class="column-info">
+                                        <div class="column-info-dropdown">
                                             <div class="info-row">
-                                                <span class="info-label">Пионири А: </span>&nbsp;&nbsp;             
+                                                <span class="info-label">Пионири А: </span>&nbsp;&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;<a class="results-link info-input" href="#">ЖМ</a>&nbsp;             
                                             </div>
                                             <div class="info-row">
                                                 <span class="info-label">Пионири Б: </span>&nbsp;&nbsp;             
@@ -402,32 +404,49 @@
 
             <section class="section" id="section-contact">
 
-                Мачевалачки клуб Црвена звезда
-                адреса: Љутице Богдана 1а, Београд
-                контакт телефон: +381 63 211036
-                e-mail:  redstarfencingclub@gmail.com
+                <p class="contact-headline headline" itemprop="name">Мачевалачки клуб Црвена звезда</p>
 
-                Сале где се тренира:
-
-                сала СД Црвена звезда, ул. Љутице Богдана 1а, Београд
-
-                Хала 2 на Београдском сајму, ул. Булевар Војводе Мишића 14, београд
-
-
-                Председник:   Др. Светлана Петронијевић - svetlana.petronijevic@fzs.edu.rs
-                Генерални секретар: Зоран Тимић - z.timic@gmail.com
-
-                    <p>Контакт телефон: <a href="">+38163211036</a> Зоран Тимић</p>
-                    <p>МК Црвена звезда тренира локацији:</p>
-                    <div class="location">
-                        <div class="location-info">
-                            <p>Сала у спортском друштву "Црвена звезда"</p>
-                            <p>За локацију сале кликните <a href="https://www.google.com/maps/place/%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D1%81%D0%BA%D0%BE+%D0%B4%D1%80%D1%83%D1%88%D1%82%D0%B2%D0%BE+%E2%80%9E%D0%A6%D1%80%D0%B2%D0%B5%D0%BD%D0%B0+%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0%E2%80%9D/@44.7847,20.4631188,18.5z/data=!4m5!3m4!1s0x475a706a9ca4075b:0x25ae5a3c1a3afa59!8m2!3d44.7851309!4d20.4631922" target="_blank">овде</a></p>
-                        </div>    
-                        <div class="location-img">
-                            <img src="" alt="" class="img">
-                        </div>
+                <div class="contact-info-column">
+                    <div class="contact-info-row">
+                        <p class="contact-label">Адреса:</p>&nbsp;&nbsp;<p class="contact-info" itemprop="streetAddress">Љутице Богдана 1а, Београд</p>
                     </div>
+
+                    <div class="contact-info-row">
+                        <p class="contact-label">Контакт телефон:</p>&nbsp;&nbsp;&nbsp;<a href="tel:+38163211036" itemprop="telephone" class="contact-link">+381 63 211036</a>
+                    </div>
+
+                    <div class="contact-info-row">
+                        <p class="contact-label">Е-mail:</p>&nbsp;&nbsp;&nbsp;<a href="mailto:redstarfencingclub@gmail.com" class="contact-link" itemprop="email">redstarfencingclub@gmail.com</a>
+                    </div>
+
+                    <div class="contact-info-row">
+                        <p class="contact-label">Председник:</p>&nbsp;&nbsp;<p class="contact-info"> Др. Светлана Петронијевић</p>&nbsp;&nbsp;&nbsp;<a href="mailto:svetlana.petronijevic@fzs.edu.rs" class="contact-link">svetlana.petronijevic@fzs.edu.rs</a>
+                    </div>
+
+                    <div class="contact-info-row">
+                        <p class="contact-label">Генерални секретар:</p>&nbsp;&nbsp;<p class="contact-info"> Зоран Тимић</p>&nbsp;&nbsp;&nbsp;<a href="mailto:z.timic@gmail.com" class="contact-link">z.timic@gmail.com</a>
+                    </div>
+                </div>
+                
+                <p class="contact-label">МК Црвена звезда тренира на две локације:</p>
+
+                <div class="location">
+                    <div class="location-info">
+                        <p class="contact-info">Сала у СД Црвена звезда, ул. Љутице Богдана 1а, Београд</p>
+                    </div>  
+                    <a class="location-img" href="http://maps.google.com/?q=Спортско+друштво+Црвена+звезда" target="_blank">
+                        <img src="./img/lokacija-marakana.png" alt="" class="img">
+                    </a>
+                </div>
+                <div class="location">
+                    <div class="location-info">
+                        <p class="contact-info">Хала 2 на Београдском сајму, ул. Булевар Војводе Мишића 14, Београд</p>
+                    </div>  
+                    <a class="location-img" href="http://maps.google.com/?q=Belgrade+Fair" target="_blank">
+                        <img src="./img/lokacija-sajam.png" alt="" class="img">
+                    </a>
+                </div>
+
  
             </section>
         </div>

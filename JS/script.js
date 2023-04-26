@@ -9,6 +9,39 @@ const competitionSingles = [...document.querySelectorAll('.competition-table-sin
 const navScroll = document.querySelector('.nav-scroll');
 const tabBtnContainer = document.querySelector('.tab-container-btn');
 const contentCarousel = document.querySelector('.content-carousel');
+const swiperCarousel = document.querySelector('.swiper-carousel');
+const swiperImages = [...document.querySelectorAll('.swiper-slide')];
+const swiperImagesNum = swiperImages.length + 1;
+
+
+// Swiper carousel 
+// Set width
+swiperCarousel.style.width = `${100*swiperImagesNum}%`;
+
+// Add first img to the end
+swiperCarousel.insertAdjacentHTML("beforeend", swiperImages[0].outerHTML);
+swiperCarousel.style.transition = "left 0.5s ease";
+// Sliding 
+
+function carouselSliding(sliderIndex) {
+    setTimeout(function() {
+        if(sliderIndex == (swiperImagesNum-1)) {
+            sliderIndex = 0;
+            swiperCarousel.style.transition = "none";
+            swiperCarousel.style.left = `-${100*sliderIndex}%`;
+            swiperCarousel.style.transition = "left 0.5s ease";
+            sliderIndex += 1;
+            carouselSliding(sliderIndex)
+        }
+        sliderIndex += 1;
+        swiperCarousel.style.left = `-${100*sliderIndex}%`;
+        carouselSliding(sliderIndex);
+    }, 4000)
+    
+}
+
+// carouselSliding(0);
+
 
 // Tabbed table content
 
